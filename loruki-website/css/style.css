@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-/* 1 09 50 */
+/* 1 14 00 */
 
 :root {
 	--primary-color: #047aed;
@@ -172,4 +172,8 @@ img {
 }
 .languages .card:hover {
 	transform: translateY(-15px);
+}
+
+.footer .social a {
+	margin: 0 10px;
 }
