@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-/* 1 36 10 */
+/* 1 42 50 */
 
 :root {
 	--primary-color: #047aed;
@@ -199,6 +199,25 @@ img {
 .footer .social a {
 	margin: 0 10px;
 }
+
+/* Docs */
+.docs-main h3 {
+	margin: 20px 0;
+}
+.docs-main .grid {
+	grid-template-columns: 1fr 2fr;
+	align-items: flex-start;
+}
+.docs-main nav li {
+	font-size: 17px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px #ccc solid;
+}
+.docs-main a:hover {
+	font-weight: bold;
+}
+
 
 @media(max-width: 768px) {
 	.grid,
