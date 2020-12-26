@@ -57,6 +57,20 @@
 	color: #fff;
 }
 
+.text-primary {
+	color: var(--primary-color);
+}
+.tex-secondary {
+	color: var(--secondary-color);
+}
+.text-dark {
+	color: var(--dark-color);
+}
+.text-light {
+	color: var(--light-color);
+}
+
+
 
 .lead {
 	font-size: 20px;
@@ -94,6 +108,12 @@
 
 .alert-success {
 	background-color: var(--success-color);
+	color: #fff;
+}
+
+.alert-error {
+	background-color: var(--error-color);
+	color: #fff;
 }
 
 .flex {

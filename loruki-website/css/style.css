@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-/* 1 45 24 */
+/* 1 48 50 */
 
 :root {
 	--primary-color: #047aed;
@@ -45,7 +45,11 @@ p {
 img {
 	width: 100%;
 }
-
+code, pre {
+	background: #333;
+	color: #fff;
+	padding: 10px;
+}
 
 /* Navbar */
 
