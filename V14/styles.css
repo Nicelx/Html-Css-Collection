@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	object-fit: cover;
+}
+.header img {
+	width: 100vw;
+	height: auto;
+	object-fit: cover;
+	background-size: cover;
+}
+.border img {
+	width: 40vw
+}
+
+
+footer img {
+	width: 100vw;
+}
