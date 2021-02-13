@@ -1,14 +1,30 @@
+/* @import url('./fonts/1.otf'); */
 * {
 	margin: 0;
 	padding: 0;
+	font-size: 30px;
 }
-/* img {
-	object-fit: cover;
-} */
-main {
-	display: flex;
-	flex-direction: column;
+@font-face {
+	font-family: "newFont";
+	src: url('./fonts/1.otf')
+   }
+@font-face {
+	font-family: "lovely";
+	src: url('./fonts/2.ttf')
+   }
+
+header {
+	margin-bottom: 100px;
+	font-family: lovely;
+	font-size: 1.2rem;
+	text-align: center;
 }
+header span {
+	text-shadow: 0 0 5px red;
+	animation: glowing 2s linear infinite;
+	
+}
+
 
 .header img {
 	width: 100vw;
@@ -16,6 +32,25 @@ main {
 	object-fit: cover;
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	font-size: 1rem;
+}
+
+.heartbeat {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+.heartbeat p {
+	font-size: 0.85rem;
+	font-family: newFont;
+	font-weight: 600;
+}
+.heartbeat div:last-child {
+	padding-left: 10px;
+}
 section div img {
 	width: 40vw;
 }
@@ -24,8 +59,28 @@ section div img {
 	animation: heartbeat 2s linear infinite;
 }
 
-#together {
-	width: 80vw;
+.border {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.border p {
+	font-size: 0.60rem;
+	padding-left: 15px;
+	padding-right: 10px;
+	font-family: newFont;
+	font-weight: 600;
+}
+.border img {
+	perspective: 200px;
+	/* animation: borderAnimation 4s ease-in infinite; */
+	animation: borderAnimation 4s linear infinite;
+}
+
+.together {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 }
 
@@ -51,5 +106,28 @@ footer img {
 	}
 	0% {
 		transform: scale(1)
+	}
+}
+@keyframes glowing {
+	100% {
+		text-shadow: 0 0 5px rgb(255, 36, 36);
+	}
+	50% {
+		text-shadow: 0 0 12px rgb(255, 36, 36);
+	}
+	0% {
+		text-shadow: 0 0 5px rgb(255, 36, 36);
+	}
+}
+
+@keyframes borderAnimation {
+	100% {
+		transform: translateY(0px)
+	}
+	50% {
+		transform: translateY(3px)
+	}
+	0% {
+		transform: translateY(0px)
 	}
 }
