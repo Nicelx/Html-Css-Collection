@@ -1,0 +1,23 @@
+{
+  "name": "css-practic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicelx/Html-Css-Collection.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicelx/Html-Css-Collection/issues"
+  },
+  "homepage": "https://github.com/Nicelx/Html-Css-Collection#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
