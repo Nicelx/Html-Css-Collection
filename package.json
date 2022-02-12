@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass" : "node-sass natours/sass/main.scss natours/css/style.css -w"
+    "watch:sass": "node-sass natours/sass/main.scss natours/css/style.css -w",
+    "compile:sass": "node-sass natours/sass/main.scss natours/css/style.comp.css ",
+    "concat:css": "concat -o natours/css/style.concat.css natours/css/icon-font.css natours/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' natours/css/style.concat.css -o natours/css/style.prefix.css"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,10 @@
   },
   "homepage": "https://github.com/Nicelx/Html-Css-Collection#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "autoprefixer": "^10.4.2",
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0"
   }
 }
