@@ -1,0 +1,50 @@
+.header {
+	display: grid;
+	width: 100%;
+	padding: 5.6rem 2rem 0;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap : 8rem;
+	margin-bottom: 19rem;
+
+	&__logo-box {
+		width: 16rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__avatar {
+		color: $color-white;
+		font-size: 2.6rem;
+		font-weight: 700;
+	}
+
+	&__logo-circle {
+		border-radius: 50%;
+		width: 4.1rem;
+		height: 4.1rem;
+		background-color: $color-primary;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__logo-text {
+		font-size: 2.4rem;
+	}
+	&__header-info {
+		margin-top: 18.6rem;
+		width: 44.5rem;
+	}
+
+	&__heading {
+		margin-bottom: 2.5rem;
+	}
+	&__paragraph {
+		margin-bottom: 4.5rem;
+	}
+	&__dots {
+		position: absolute;
+		top: 16rem;
+		left: 0;
+	}
+}

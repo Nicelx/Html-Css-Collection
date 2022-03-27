@@ -1,0 +1,23 @@
+.navigation {
+	width: 54.5rem;
+	justify-self: end;
+	display: flex;
+	justify-content: space-between;
+
+	&__item {
+
+	}
+	&__link:link,
+	&__link:visited {
+		font-size: 1.8rem;
+		color: $color-navigation;
+		opacity: 50%;
+		text-decoration: none;
+		transition: .2s ease-in;
+	}
+	&__link:active,
+	&__link:hover {
+		opacity: 100;
+	}
+
+}
