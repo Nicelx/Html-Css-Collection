@@ -3,14 +3,32 @@ body {
 	font-weight: 700;
 	color: $color-black;
 }
-
-.heading-primary {
-	font-size: 4.8rem;
+.heading-primary, .heading-secondary, .heading-tertiary {
 	line-height: 5.6rem;
 }
 
+.heading-primary {
+	font-size: 4.8rem;
+}
+.heading-secondary {
+	font-size: 3.6rem;
+}
+.heading-tertiary {
+	font-size: 2.4rem;
+}
 
-.paragraph-large {
+.paragraph-large, .paragraph-medium, .paragraph-small {
 	color: $color-gray-1;
+	font-weight: 300;
+}
+.paragraph-large {
 	font-size: 2.1rem;
+}
+
+.paragraph-medium {
+	font-size: 1.8rem;
+}
+.paragraph-small {
+	font-size: 1.6rem;
+	line-height: 2.8rem;
 }
