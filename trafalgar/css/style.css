@@ -36,7 +36,8 @@ body {
   font-size: 2.1rem; }
 
 .paragraph-medium {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  line-height: 3rem; }
 
 .paragraph-small {
   font-size: 1.6rem;
@@ -169,7 +170,19 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, min-content);
-  column-gap: 13.7rem; }
+  column-gap: 13.7rem;
+  padding: 0 3px;
+  margin-bottom: 22.9rem; }
   .providers__img {
     grid-row: 1/-1;
     grid-column: 1/2; }
+  .providers__heading {
+    margin-top: 5.7rem;
+    margin-bottom: 8.2rem; }
+  .providers__divider {
+    width: 5.6rem;
+    height: 2px;
+    background-color: #000000;
+    margin-bottom: 3.1rem; }
+  .providers__paragraph {
+    margin-bottom: 3.7rem; }
