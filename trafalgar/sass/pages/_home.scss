@@ -71,5 +71,34 @@
 }
 
 .mobile-app {
-
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, min-content);
+	column-gap: 13rem;
+	margin-left: 12rem;
+	
+	&__img {
+		grid-row: 1/-1;
+		grid-column: 2/3;
+	}
+	&__heading {
+		margin-top:1rem;
+		margin-bottom: 3rem;
+		line-height: 4.8rem;
+	}
+	&__divider {
+		width: 5.6rem;
+		height: 2px;
+		background-color: $color-black;
+		margin-bottom: 3.1rem;
+	}
+	&__paragraph {
+		margin-bottom: 4rem;
+	}
+	&__btn {
+		display: flex;
+		align-items: center;
+		padding: 0 4.2rem;
+		justify-content: space-between;
+	}
 }
