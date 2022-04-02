@@ -192,7 +192,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, min-content);
   column-gap: 13rem;
-  margin-left: 12rem; }
+  margin-left: 12rem;
+  margin-bottom: 25.1rem; }
   .mobile-app__img {
     grid-row: 1/-1;
     grid-column: 2/3; }
@@ -212,3 +213,10 @@ body {
     align-items: center;
     padding: 0 4.2rem;
     justify-content: space-between; }
+
+.feedback-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  padding: 1.5rem 5.2rem 0; }
