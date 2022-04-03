@@ -220,3 +220,26 @@ body {
   align-items: center;
   width: 95%;
   padding: 1.5rem 5.2rem 0; }
+
+.feedback {
+  padding: 6.4rem 11.8rem 8rem;
+  background: linear-gradient(#67C3F3, #5A98F2);
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff; }
+  .feedback__heading {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    margin-bottom: 2.5rem; }
+  .feedback__divider {
+    width: 5.6rem;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 6.6rem; }
+  .feedback__review {
+    display: grid;
+    grid-template-columns: repeat(3, max-content); }
+  .feedback__status {
+    opacity: 85%; }
