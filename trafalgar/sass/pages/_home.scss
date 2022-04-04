@@ -132,10 +132,30 @@
 		margin-bottom: 6.6rem;
 	}
 	&__review {
-		display: grid;
-		grid-template-columns: repeat(3, max-content);		
+		display: flex;		
+		align-items: center;
+	}
+	&__avatar {
+		width: 14.1rem;
+		height: 14.1rem;
+		border-radius: 50%;
+		border: 2px solid $color-white;
+	}
+	&__name-block {
+		margin-left: 2.9rem;
+		min-width: 18.5rem;
+	}
+	&__name {
+		font-size: 2.2rem;
+		line-height:4.8rem;
 	}
 	&__status {
 		opacity: 85%;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height:4.8rem; 
+	}
+	&__comment {
+		margin-left: 11rem;
 	}
 }
