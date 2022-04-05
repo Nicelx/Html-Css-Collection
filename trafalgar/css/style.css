@@ -228,7 +228,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff; }
+  color: #fff;
+  position: relative;
+  margin-bottom: 4.2rem; }
   .feedback__heading {
     font-size: 3.6rem;
     line-height: 4.8rem;
@@ -258,4 +260,34 @@ body {
     font-weight: 400;
     line-height: 4.8rem; }
   .feedback__comment {
-    margin-left: 11rem; }
+    margin-left: 11rem;
+    font-size: 1.9rem;
+    font-weight: 400;
+    opacity: 90%;
+    line-height: 3rem; }
+  .feedback__dots {
+    position: absolute;
+    top: -2rem;
+    right: -5rem;
+    overflow: hidden; }
+
+.arrow-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 26.25%;
+  min-width: 33rem; }
+  .arrow-nav__left-button, .arrow-nav__right-button {
+    border: none; }
+  .arrow-nav__steps {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between; }
+  .arrow-nav__step {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #5B9BF3;
+    opacity: 30%; }
+    .arrow-nav__step--active {
+      opacity: 1; }
