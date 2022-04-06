@@ -219,7 +219,14 @@ body {
   flex-direction: column;
   align-items: center;
   width: 95%;
-  padding: 1.5rem 5.2rem 0; }
+  padding: 1.5rem 5.2rem 0;
+  position: relative;
+  margin-bottom: 21.6rem; }
+  .feedback-section__dots {
+    position: absolute;
+    left: 0;
+    top: 54%;
+    z-index: -1; }
 
 .feedback {
   padding: 6.4rem 11.8rem 8rem;
@@ -268,8 +275,7 @@ body {
   .feedback__dots {
     position: absolute;
     top: -2rem;
-    right: -5rem;
-    overflow: hidden; }
+    right: -5rem; }
 
 .arrow-nav {
   display: flex;
@@ -279,6 +285,9 @@ body {
   min-width: 33rem; }
   .arrow-nav__left-button, .arrow-nav__right-button {
     border: none; }
+  .arrow-nav__left-button {
+    opacity: 0.4;
+    transform: rotate(180deg); }
   .arrow-nav__steps {
     width: 10rem;
     display: flex;

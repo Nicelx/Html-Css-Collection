@@ -24,7 +24,7 @@
 		background-color: $color-black;
 		margin-bottom: 3.3rem;
 	}
-	
+
 	&__grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -67,7 +67,6 @@
 	&__paragraph {
 		margin-bottom: 3.7rem;
 	}
-
 }
 
 .mobile-app {
@@ -77,13 +76,13 @@
 	column-gap: 13rem;
 	margin-left: 12rem;
 	margin-bottom: 25.1rem;
-	
+
 	&__img {
 		grid-row: 1/-1;
 		grid-column: 2/3;
 	}
 	&__heading {
-		margin-top:1rem;
+		margin-top: 1rem;
 		margin-bottom: 3rem;
 		line-height: 4.8rem;
 	}
@@ -106,10 +105,19 @@
 
 .feedback-section {
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
 	align-items: center;
 	width: 95%;
 	padding: 1.5rem 5.2rem 0;
+	position: relative;
+	margin-bottom: 21.6rem;
+
+	&__dots {
+		position: absolute;
+		left: 0;
+		top: 54%;
+		z-index: -1;
+	}
 }
 .feedback {
 	padding: 6.4rem 11.8rem 8rem;
@@ -134,7 +142,7 @@
 		margin-bottom: 6.6rem;
 	}
 	&__review {
-		display: flex;		
+		display: flex;
 		align-items: center;
 	}
 	&__avatar {
@@ -149,13 +157,13 @@
 	}
 	&__name {
 		font-size: 2.2rem;
-		line-height:4.8rem;
+		line-height: 4.8rem;
 	}
 	&__status {
 		opacity: 85%;
 		font-size: 1.8rem;
 		font-weight: 400;
-		line-height:4.8rem; 
+		line-height: 4.8rem;
 	}
 	&__comment {
 		margin-left: 11rem;
@@ -168,7 +176,6 @@
 		position: absolute;
 		top: -2rem;
 		right: -5rem;
-		overflow: hidden;
 	}
 }
 
@@ -179,8 +186,13 @@
 	width: 26.25%;
 	min-width: 33rem;
 
-	&__left-button, &__right-button {
-		border: none
+	&__left-button,
+	&__right-button {
+		border: none;
+	}
+	&__left-button {
+		opacity: 0.4;
+		transform: rotate(180deg);
 	}
 	&__steps {
 		width: 10rem;
@@ -191,7 +203,7 @@
 		width: 1rem;
 		height: 1rem;
 		border-radius: 50%;
-		background-color: $color-step;		
+		background-color: $color-step;
 		opacity: 30%;
 		&--active {
 			opacity: 1;
