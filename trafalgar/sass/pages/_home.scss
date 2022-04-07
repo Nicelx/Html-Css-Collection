@@ -210,3 +210,24 @@
 		}
 	}
 }
+.latest-articles {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 8rem;
+
+	&__heading {
+		margin-bottom: 2.5rem;
+	}
+	&__divider {
+		width: 5.6rem;
+		height: 2px;
+		margin-bottom: 6.6rem;
+		background-color: $color-black;
+		margin-bottom: 8rem;
+	}
+	&__articles {
+		display: flex;
+	}
+
+}
