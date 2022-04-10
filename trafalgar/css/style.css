@@ -102,6 +102,15 @@ body {
   .navigation__link:active, .navigation__link:hover {
     opacity: 100; }
 
+.footer__background {
+  position: absolute;
+  left: 0;
+  background-color: orangered;
+  width: 100%;
+  margin-top: -43.2rem;
+  height: 43.2rem;
+  z-index: -1; }
+
 .btn {
   width: 20rem;
   height: 6rem;
