@@ -240,3 +240,12 @@
 	}
 
 }
+
+.dots {
+	position: absolute;
+
+	&__footer-left {
+		bottom: 1rem;
+		right: 93%;
+	}
+}
