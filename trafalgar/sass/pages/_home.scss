@@ -245,7 +245,9 @@
 	position: absolute;
 
 	&__footer-left {
-		bottom: 1rem;
-		right: 93%;
+		object-fit: none;
+		bottom: 10rem;
+		left: 10rem;
+		overflow: hidden;
 	}
 }
