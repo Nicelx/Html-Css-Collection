@@ -4,6 +4,8 @@
 	width: 35rem;
 	box-shadow: 10px 40px 50px $color-article-shadow;
 	border-radius: 20px;
+	z-index: 5;
+	background-color: $color-white;
 
 	&:not(:last-child) {
 		margin-right: 3.4rem;

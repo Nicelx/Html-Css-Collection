@@ -246,8 +246,14 @@
 
 	&__footer-left {
 		object-fit: none;
-		bottom: 10rem;
-		left: 10rem;
+		clip-path: inset(1rem 1rem 0 0);
+		bottom: .5rem;
+		left: 1rem;
 		overflow: hidden;
 	}
+}
+.tear-articles {
+	position: absolute;
+	background: url('../img/svg/tear.svg') no-repeat;
+	background-position: 100% 11%;
 }
