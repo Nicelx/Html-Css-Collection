@@ -427,7 +427,9 @@ body {
     left: 1rem;
     overflow: hidden; }
 
-.tear-articles {
-  position: absolute;
-  background: url("../img/svg/tear.svg") no-repeat;
-  background-position: 100% 11%; }
+.tear--articles {
+  position: relative; }
+  .tear--articles::after {
+    position: absolute;
+    background: url("../img/svg/tear.svg") no-repeat;
+    background-position: 100% 11%; }

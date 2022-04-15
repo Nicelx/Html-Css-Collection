@@ -252,8 +252,11 @@
 		overflow: hidden;
 	}
 }
-.tear-articles {
-	position: absolute;
-	background: url('../img/svg/tear.svg') no-repeat;
-	background-position: 100% 11%;
+.tear--articles {
+	position: relative;
+	&::after {
+		position: absolute;
+		background: url('../img/svg/tear.svg') no-repeat;
+		background-position: 100% 11%;
+	}
 }
