@@ -1,0 +1,33 @@
+.arrow-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 26.25%;
+	min-width: 33rem;
+	
+
+	&__left-button,
+	&__right-button {
+		border: none;
+		background-color: $color-white;
+	}
+	&__left-button {
+		opacity: 0.4;
+		transform: rotate(180deg);
+	}
+	&__steps {
+		width: 10rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__step {
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50%;
+		background-color: $color-step;
+		opacity: 30%;
+		&--active {
+			opacity: 1;
+		}
+	}
+}

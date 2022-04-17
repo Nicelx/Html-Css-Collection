@@ -226,6 +226,31 @@ body {
     width: 1.4rem;
     margin-left: 7px; }
 
+.arrow-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 26.25%;
+  min-width: 33rem; }
+  .arrow-nav__left-button, .arrow-nav__right-button {
+    border: none;
+    background-color: #fff; }
+  .arrow-nav__left-button {
+    opacity: 0.4;
+    transform: rotate(180deg); }
+  .arrow-nav__steps {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between; }
+  .arrow-nav__step {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #5B9BF3;
+    opacity: 30%; }
+    .arrow-nav__step--active {
+      opacity: 1; }
+
 .services {
   display: flex;
   flex-direction: column;
@@ -370,36 +395,13 @@ body {
     top: -2rem;
     right: -5rem; }
 
-.arrow-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 26.25%;
-  min-width: 33rem; }
-  .arrow-nav__left-button, .arrow-nav__right-button {
-    border: none; }
-  .arrow-nav__left-button {
-    opacity: 0.4;
-    transform: rotate(180deg); }
-  .arrow-nav__steps {
-    width: 10rem;
-    display: flex;
-    justify-content: space-between; }
-  .arrow-nav__step {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: #5B9BF3;
-    opacity: 30%; }
-    .arrow-nav__step--active {
-      opacity: 1; }
-
 .latest-articles {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20rem;
-  position: relative; }
+  position: relative;
+  padding: 0 8rem; }
   .latest-articles__heading {
     margin-bottom: 2.5rem; }
   .latest-articles__divider {
@@ -416,21 +418,21 @@ body {
     left: 3rem;
     top: 12rem;
     z-index: -1; }
-  .latest-articles__tear {
-    position: absolute;
-    right: 0;
-    top: 0; }
 
 .dots {
   position: absolute; }
   .dots__footer-left {
     object-fit: none;
     clip-path: inset(1rem 1rem 0 0);
-    bottom: .5rem;
+    bottom: 0.5rem;
     left: 1rem;
     overflow: hidden; }
+  .dots__healthcare-right {
+    right: 0;
+    clip-path: inset(1rem 1rem 0 0);
+    top: 2783px; }
 
-.tear--articles {
-  position: absolute;
+.tear__articles {
   right: 0;
-  top: 280%; }
+  top: 4427px;
+  position: absolute; }

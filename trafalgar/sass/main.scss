@@ -3,6 +3,7 @@
 @import 'base/reset';
 @import 'base/typography';
 
+
 @import 'layout/container';
 @import 'layout/header';
 @import 'layout/navigation';
@@ -11,5 +12,6 @@
 @import 'components/button';
 @import 'components/service-item';
 @import 'components/article';
+@import 'components/arrow-nav';
 
 @import 'pages/home';
