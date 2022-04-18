@@ -190,7 +190,7 @@ body {
   padding: 5.4rem 4.7rem 4rem 3.7rem;
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.5);
   border-radius: 20px;
-  z-index: 5; }
+  background-color: #fff; }
   .service-item__img {
     margin-bottom: 2.2rem; }
 
@@ -256,7 +256,6 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: 0;
   margin-bottom: 22rem; }
   .services__text-block {
     display: flex;
@@ -279,10 +278,10 @@ body {
     column-gap: 3.7rem;
     margin-bottom: 7.2rem; }
   .services__dots {
-    position: absolute;
+    position: relative;
     z-index: -1;
-    right: 0;
-    top: 50%; }
+    right: -55rem;
+    top: -59rem; }
 
 .providers {
   display: grid;
@@ -428,8 +427,8 @@ body {
     left: 1rem;
     overflow: hidden; }
   .dots__healthcare-right {
-    right: 0;
-    clip-path: inset(1rem 1rem 0 0);
+    right: 0.5rem;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%);
     top: 2783px; }
 
 .tear__articles {

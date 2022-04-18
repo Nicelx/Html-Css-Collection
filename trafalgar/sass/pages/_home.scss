@@ -3,7 +3,7 @@
 	flex-direction: column;
 	align-items: center;
 	position: relative;
-	z-index: 0;
+	// z-index: 0;
 	margin-bottom: 22rem;
 
 	&__text-block {
@@ -35,10 +35,10 @@
 	}
 
 	&__dots {
-		position: absolute;
+		position: relative;
 		z-index: -1;
-		right: 0;
-		top: 50%;
+		right: -55rem;
+		top: -59rem;
 	}
 }
 
@@ -221,8 +221,9 @@
 		overflow: hidden;
 	}
 	&__healthcare-right {
-		right: 0;
-		clip-path: inset(1rem 1rem 0 0);
+		right: 0.5rem;
+		// clip-path: inset(0 0 1rem 1rem);
+		clip-path: polygon(30% 0 ,100% 0,100% 100%,30% 100%);
 		top: 2783px;
 	}
 }
