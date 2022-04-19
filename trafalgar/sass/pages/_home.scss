@@ -145,11 +145,15 @@
 		display: flex;
 		align-items: center;
 	}
+	&__avatar-container {
+		
+	}
 	&__avatar {
 		width: 14.1rem;
-		height: 14.1rem;
+		height: 100%;
 		border-radius: 50%;
 		border: 2px solid $color-white;
+		object-fit: cover;
 	}
 	&__name-block {
 		margin-left: 2.9rem;
@@ -228,9 +232,14 @@
 	}
 }
 .tear {
+	position: absolute;
 	&__articles {
 		right: 0;
 		top: 4427px;
-		position: absolute;
+	}
+	&__our-services {
+		left: 0;
+		top: 965px;
+		z-index: -1;
 	}
 }

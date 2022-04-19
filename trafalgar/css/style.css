@@ -367,11 +367,15 @@ body {
   .feedback__review {
     display: flex;
     align-items: center; }
+  .feedback__avatar-container {
+    width: 14.1rem;
+    height: 14.1rem; }
   .feedback__avatar {
     width: 14.1rem;
-    height: 14.1rem;
+    height: 100%;
     border-radius: 50%;
-    border: 2px solid #fff; }
+    border: 2px solid #fff;
+    object-fit: cover; }
   .feedback__name-block {
     margin-left: 2.9rem;
     min-width: 18.5rem; }
@@ -431,7 +435,12 @@ body {
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%);
     top: 2783px; }
 
-.tear__articles {
-  right: 0;
-  top: 4427px;
+.tear {
   position: absolute; }
+  .tear__articles {
+    right: 0;
+    top: 4427px; }
+  .tear__our-services {
+    left: 0;
+    top: 965px;
+    z-index: -1; }
