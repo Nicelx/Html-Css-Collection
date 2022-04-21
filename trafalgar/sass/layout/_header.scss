@@ -47,4 +47,11 @@
 		top: 16rem;
 		left: 0;
 	}
+
+	&__illustration {
+		@media screen and (max-width: $breakpoint-lg) {
+			width: 80%;
+			margin: auto 0;
+		}
+	}
 }

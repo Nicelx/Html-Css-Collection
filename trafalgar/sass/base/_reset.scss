@@ -8,6 +8,10 @@
 
 html {
 	font-size: 62.5%;
+
+	@media screen and (max-width: $breakpoint-lg) {
+		font-size: 56.25%;
+	}
 }
 body {
 	box-sizing: border-box;

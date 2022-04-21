@@ -5,8 +5,8 @@
 	margin: 0 auto;
 	width: 128rem;
 
-	@media screen and (max-width: 128rem) {
-		width: 100%;
+	@media screen and (max-width: $breakpoint-lg) {
+		width: 90%;
 		padding: 0 1rem;
 	}
 }
