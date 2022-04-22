@@ -267,7 +267,8 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-bottom: 22rem; }
+  margin-bottom: 22rem;
+  width: 100%; }
   .services__text-block {
     display: flex;
     flex-direction: column;
@@ -284,15 +285,14 @@ body {
   .services__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 87.5%;
+    width: 1120px;
     row-gap: 3.3rem;
-    column-gap: 3.7rem;
     margin-bottom: 7.2rem; }
   .services__dots {
-    position: relative;
+    position: absolute;
     z-index: -1;
-    right: -55rem;
-    top: -59rem; }
+    right: 20px;
+    top: 545px; }
 
 .providers {
   display: grid;
