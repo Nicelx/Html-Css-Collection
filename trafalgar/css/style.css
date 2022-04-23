@@ -196,7 +196,6 @@ body {
   box-shadow: 0 2px 1px 3px rgba(0, 0, 0, 0.15); }
 
 .service-item {
-  width: 35rem;
   height: 35.4rem;
   padding: 5.4rem 4.7rem 4rem 3.7rem;
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.5);
@@ -287,7 +286,12 @@ body {
     grid-template-columns: repeat(3, 1fr);
     width: 1120px;
     row-gap: 3.3rem;
+    column-gap: 3.7rem;
+    align-items: end;
     margin-bottom: 7.2rem; }
+    @media screen and (max-width: 1280px) {
+      .services__grid {
+        width: 100%; } }
   .services__dots {
     position: absolute;
     z-index: -1;
@@ -304,6 +308,10 @@ body {
   .providers__img {
     grid-row: 1/-1;
     grid-column: 1/2; }
+    @media screen and (max-width: 1280px) {
+      .providers__img {
+        width: 100%;
+        margin: auto; } }
   .providers__heading {
     margin-top: 5.7rem;
     margin-bottom: 8.2rem; }
@@ -325,6 +333,10 @@ body {
   .mobile-app__img {
     grid-row: 1/-1;
     grid-column: 2/3; }
+    @media screen and (max-width: 1280px) {
+      .mobile-app__img {
+        width: 100%;
+        margin: auto; } }
   .mobile-app__heading {
     margin-top: 1rem;
     margin-bottom: 3rem;

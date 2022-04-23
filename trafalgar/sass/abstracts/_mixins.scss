@@ -1,0 +1,13 @@
+@mixin respond($breakpoint) {
+	@if $breakpoint == lg {
+		@media screen and (max-width: $breakpoint-lg) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == md {
+		@media screen and (max-width: $breakpoint-md) {
+			@content;
+		}
+	}	
+}
