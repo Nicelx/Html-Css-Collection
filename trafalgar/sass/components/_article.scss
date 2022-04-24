@@ -1,11 +1,15 @@
 .article {
 	display: flex;
 	flex-direction: column;
-	width: 35rem;
+	flex: 35rem 1 1;
 	box-shadow: 10px 40px 50px $color-article-shadow;
 	border-radius: 20px;
 	z-index: 5;
 	background-color: $color-white;
+
+	// @include respond(lg) {
+	// 	width: 30%;
+	// }
 
 	&:not(:last-child) {
 		margin-right: 3.4rem;

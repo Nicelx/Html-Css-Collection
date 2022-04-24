@@ -205,6 +205,10 @@
 	position: relative;
 	padding: 0 8rem;
 
+	@include respond(lg) {
+		padding: 0;
+	}
+
 	&__heading {
 		margin-bottom: 2.5rem;
 	}
@@ -218,12 +222,17 @@
 	&__articles {
 		display: flex;
 		margin-bottom: 6.9rem;
+		justify-content: space-between;
 	}
 	&__dots {
 		position: absolute;
-		left: 3rem;
-		top: 12rem;
+		left:30px;
+		top: 120px;
 		z-index: -1;
+
+		@include respond(lg) {
+			left: -45px;
+		}
 	}
 }
 
