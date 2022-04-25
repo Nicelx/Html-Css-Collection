@@ -128,11 +128,21 @@
 	position: relative;
 	margin-bottom: 21.6rem;
 
+	@include respond(lg) {
+		padding: 0;
+		width: 100%;
+	}
+	
 	&__dots {
 		position: absolute;
 		left: 0;
 		top: 54%;
 		z-index: -1;
+
+		@include respond(lg) {
+			left: -50px;
+			top: 30%;
+		}
 	}
 }
 .feedback {
@@ -145,6 +155,10 @@
 	color: $color-white;
 	position: relative;
 	margin-bottom: 4.2rem;
+
+	// @include respond(lg) {
+	// 	padding: 0;
+	// }
 
 	&__heading {
 		font-size: 3.6rem;
@@ -258,6 +272,10 @@
 	&__articles {
 		right: 0;
 		top: 4427px;
+
+		@include respond(lg) {
+			top: 3890px;
+		}
 	}
 	&__our-services {
 		left: 0;

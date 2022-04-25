@@ -4,14 +4,23 @@
 	color: $color-white;
 	position: relative;
 
+	@include respond(lg) {
+		padding: 9rem 0;
+	}
+
 	&__background {
 		position: absolute;
 		left: 0;
 		background: linear-gradient(183.41deg, $color-gradient-1 -8.57%, $color-gradient-2 82.96%);
 		width:100%;
-		margin-top: -43.2rem;
-		height: 43.2rem;
+		margin-top: -432px;
+		height: 432px;
 		z-index: -1;
+
+		@include respond(lg) {
+			margin-top: -400px;
+			height: 400px;
+		}
 	}
 
 	&__logo-box {
@@ -39,9 +48,27 @@
 		font-size: 2.6rem;
 	}
 
-	&__column:not(:last-child) {
-		margin-right: 14.5rem;
+	&__column{ 
+		display: flex;
+		flex-direction: column;
+		margin-right: 2rem;
+
+		&--1 {
+			flex: 39rem 1 1;
+		}
+
+		&--2, &--3, &--4 {
+			flex: 25rem 1 1;
+		}
 	}
+
+	// &__column:not(:last-child) {
+	// 	margin-right: 14.5rem;
+
+	// 	// @include respond(lg) {
+	// 	// 	margin-right: 2rem;
+	// 	// }
+	// }
 	&__paragraph, &__link {
 		font-size: 1.8rem;
 		line-height: 2.8rem;
