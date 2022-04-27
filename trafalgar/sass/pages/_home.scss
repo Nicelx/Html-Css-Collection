@@ -3,9 +3,12 @@
 	flex-direction: column;
 	align-items: center;
 	position: relative;
-	// z-index: 0;
 	margin-bottom: 22rem;
 	width: 100%;
+
+	@include respond(md) {
+		margin-bottom: 10rem;
+	}
 
 	&__text-block {
 		display: flex;
@@ -38,6 +41,11 @@
 		@media screen and (max-width: $breakpoint-lg) {
 			width: 100%;
 		}
+
+		@include respond(md) {
+			grid-template-columns: repeat(2,1fr);
+			padding: 0 5rem;
+		}
 	}
 
 	&__dots {
@@ -55,6 +63,11 @@
 	column-gap: 13.7rem;
 	padding: 0 3px;
 	margin-bottom: 22.9rem;
+
+	@include respond(md) {
+		column-gap: 5rem;
+		margin-bottom: 12rem;
+	}
 
 	&__img {
 		grid-row: 1/-1;
@@ -87,6 +100,13 @@
 	column-gap: 13rem;
 	margin-left: 12rem;
 	margin-bottom: 25.1rem;
+
+	@include respond(md) {
+		column-gap: 5rem;
+		margin-left: 0;
+		padding: 0 2rem;
+		margin-bottom: 12rem;
+	}
 
 	&__img {
 		grid-row: 1/-1;

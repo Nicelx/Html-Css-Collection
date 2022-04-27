@@ -298,6 +298,9 @@ body {
   position: relative;
   margin-bottom: 22rem;
   width: 100%; }
+  @media screen and (max-width: 1024px) {
+    .services {
+      margin-bottom: 10rem; } }
   .services__text-block {
     display: flex;
     flex-direction: column;
@@ -322,6 +325,10 @@ body {
     @media screen and (max-width: 1280px) {
       .services__grid {
         width: 100%; } }
+    @media screen and (max-width: 1024px) {
+      .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 5rem; } }
   .services__dots {
     position: absolute;
     z-index: -1;
@@ -335,6 +342,10 @@ body {
   column-gap: 13.7rem;
   padding: 0 3px;
   margin-bottom: 22.9rem; }
+  @media screen and (max-width: 1024px) {
+    .providers {
+      column-gap: 5rem;
+      margin-bottom: 12rem; } }
   .providers__img {
     grid-row: 1/-1;
     grid-column: 1/2; }
@@ -360,6 +371,12 @@ body {
   column-gap: 13rem;
   margin-left: 12rem;
   margin-bottom: 25.1rem; }
+  @media screen and (max-width: 1024px) {
+    .mobile-app {
+      column-gap: 5rem;
+      margin-left: 0;
+      padding: 0 2rem;
+      margin-bottom: 12rem; } }
   .mobile-app__img {
     grid-row: 1/-1;
     grid-column: 2/3; }
