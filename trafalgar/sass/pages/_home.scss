@@ -158,6 +158,8 @@
 		left: 0;
 		top: 54%;
 		z-index: -1;
+		// to do bug here
+		overflow: hidden;
 
 		@include respond(lg) {
 			left: -50px;
@@ -301,5 +303,9 @@
 		left: 0;
 		top: 965px;
 		z-index: -1;
+
+		@include respond(md) {
+			width: 40%;
+		}
 	}
 }
