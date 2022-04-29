@@ -200,9 +200,12 @@ body {
     text-decoration: none; }
   .footer__dot-1 {
     position: absolute;
-    right: -5rem;
-    top: -4rem;
+    right: -50px;
+    top: -40px;
     z-index: -1; }
+    @media screen and (max-width: 1024px) {
+      .footer__dot-1 {
+        right: 10px; } }
 
 .btn {
   width: 20rem;
@@ -417,8 +420,7 @@ body {
     position: absolute;
     left: 0;
     top: 54%;
-    z-index: -1;
-    overflow: hidden; }
+    z-index: -1; }
     @media screen and (max-width: 1280px) {
       .feedback-section__dots {
         left: -50px;
@@ -434,6 +436,9 @@ body {
   color: #fff;
   position: relative;
   margin-bottom: 4.2rem; }
+  @media screen and (max-width: 1024px) {
+    .feedback {
+      padding: 20px; } }
   .feedback__heading {
     font-size: 3.6rem;
     line-height: 4.8rem;
@@ -446,6 +451,9 @@ body {
   .feedback__review {
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 1024px) {
+      .feedback__review {
+        justify-content: space-between; } }
   .feedback__avatar {
     width: 14.1rem;
     height: 14.1rem;
@@ -455,6 +463,9 @@ body {
   .feedback__name-block {
     margin-left: 2.9rem;
     min-width: 18.5rem; }
+    @media screen and (max-width: 1024px) {
+      .feedback__name-block {
+        margin-left: 0; } }
   .feedback__name {
     font-size: 2.2rem;
     line-height: 4.8rem; }
@@ -469,10 +480,19 @@ body {
     font-weight: 400;
     opacity: 90%;
     line-height: 3rem; }
+    @media screen and (max-width: 1024px) {
+      .feedback__comment {
+        margin-left: 0;
+        padding: 5px; } }
   .feedback__dots {
     position: absolute;
     top: -2rem;
     right: -5rem; }
+    @media screen and (max-width: 1024px) {
+      .feedback__dots {
+        clip-path: inset(0 0 20px 50px);
+        top: 7px;
+        right: 7px; } }
 
 .latest-articles {
   display: flex;

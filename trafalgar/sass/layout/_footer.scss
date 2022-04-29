@@ -92,8 +92,12 @@
 	}
 	&__dot-1 {
 		position: absolute;
-		right: -5rem;
-		top: -4rem;
+		right: -50px;
+		top: -40px;
 		z-index: -1;
+
+		@include respond(md) {
+			right: 10px;
+		}
 	}
 }

@@ -158,13 +158,12 @@
 		left: 0;
 		top: 54%;
 		z-index: -1;
-		// to do bug here
-		overflow: hidden;
-
+		
 		@include respond(lg) {
 			left: -50px;
 			top: 30%;
 		}
+		
 	}
 }
 .feedback {
@@ -178,9 +177,9 @@
 	position: relative;
 	margin-bottom: 4.2rem;
 
-	// @include respond(lg) {
-	// 	padding: 0;
-	// }
+	@include respond(md) {
+		padding: 20px;
+	}
 
 	&__heading {
 		font-size: 3.6rem;
@@ -196,6 +195,10 @@
 	&__review {
 		display: flex;
 		align-items: center;
+
+		@include respond(md) {
+			justify-content: space-between;
+		}
 	}
 	&__avatar {
 		width: 14.1rem;
@@ -207,6 +210,10 @@
 	&__name-block {
 		margin-left: 2.9rem;
 		min-width: 18.5rem;
+
+		@include respond(md) {
+			margin-left: 0;
+		}
 	}
 	&__name {
 		font-size: 2.2rem;
@@ -224,11 +231,22 @@
 		font-weight: 400;
 		opacity: 90%;
 		line-height: 3rem;
+
+		@include respond(md) {
+			margin-left: 0;
+			padding: 5px
+		}
 	}
 	&__dots {
 		position: absolute;
 		top: -2rem;
 		right: -5rem;
+
+		@include respond(md){
+			clip-path: inset(0 0 20px 50px);
+			top: 7px;
+			right: 7px;
+		}
 	}
 }
 
