@@ -55,10 +55,18 @@
 
 		&--1 {
 			flex: 39rem 1 1;
+
+			@include respond(md) {
+				flex: 250px 1 1;
+			}
 		}
 
 		&--2, &--3, &--4 {
 			flex: 25rem 1 1;
+
+			@include respond(md) {
+				flex: 50px 1 1;
+			}
 		}
 	}
 

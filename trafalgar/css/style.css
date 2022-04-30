@@ -59,6 +59,9 @@ body {
     .container {
       width: 100%;
       padding: 0 3vw; } }
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 0 15px; } }
 
 .header {
   display: grid;
@@ -111,6 +114,8 @@ body {
     .header__illustration {
       grid-column: 3/-1;
       width: 100%; } }
+  .header #menu-toggle {
+    display: none; }
 
 .navigation {
   width: 54.5rem;
@@ -176,8 +181,14 @@ body {
     margin-right: 2rem; }
     .footer__column--1 {
       flex: 39rem 1 1; }
+      @media screen and (max-width: 1024px) {
+        .footer__column--1 {
+          flex: 250px 1 1; } }
     .footer__column--2, .footer__column--3, .footer__column--4 {
       flex: 25rem 1 1; }
+      @media screen and (max-width: 1024px) {
+        .footer__column--2, .footer__column--3, .footer__column--4 {
+          flex: 50px 1 1; } }
   .footer__paragraph, .footer__link {
     font-size: 1.8rem;
     line-height: 2.8rem;
@@ -247,8 +258,14 @@ body {
   background-color: #fff; }
   .article:not(:last-child) {
     margin-right: 3.4rem; }
+    @media screen and (max-width: 1024px) {
+      .article:not(:last-child) {
+        margin-right: 15px; } }
   .article__heading, .article__text, .article__link {
     padding: 0 5rem 3.5rem 3.3rem; }
+    @media screen and (max-width: 1024px) {
+      .article__heading, .article__text, .article__link {
+        padding: 0 20px; } }
   .article__heading {
     font-size: 2.1rem;
     line-height: 3.2rem;

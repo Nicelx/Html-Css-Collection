@@ -13,4 +13,8 @@
 		width: 100%;
 		padding: 0 3vw;
 	}
+
+	@include respond(sm) {
+		padding: 0 15px;
+	}
 }
