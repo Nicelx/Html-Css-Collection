@@ -68,8 +68,23 @@
 	}
 
 	// toggle hamburger
-	#menu-toggle {
+	&__menu-toggle {
 		display: none;
-	  }
-	
+	}
+
+	&__menu-button-container {
+		display: none;
+
+		@include respond(sm) {
+			display: block;
+		}
+	}
+	&__navigation-wrapper {
+		@include respond(sm) {
+			display: none;
+		}
+	}
+	&__menu-toggle:checked + &__navigation-wrapper {
+		display: block;
+	}
 }

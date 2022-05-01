@@ -114,8 +114,18 @@ body {
     .header__illustration {
       grid-column: 3/-1;
       width: 100%; } }
-  .header #menu-toggle {
+  .header__menu-toggle {
     display: none; }
+  .header__menu-button-container {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .header__menu-button-container {
+        display: block; } }
+  @media screen and (max-width: 768px) {
+    .header__navigation-wrapper {
+      display: none; } }
+  .header__menu-toggle:checked + .header__navigation-wrapper {
+    display: block; }
 
 .navigation {
   width: 54.5rem;
@@ -126,6 +136,9 @@ body {
     .navigation {
       width: 100%;
       grid-column: 2/-1; } }
+  @media screen and (max-width: 768px) {
+    .navigation {
+      display: none; } }
   .navigation__link:link, .navigation__link:visited {
     font-size: 1.8rem;
     color: #1F1534;

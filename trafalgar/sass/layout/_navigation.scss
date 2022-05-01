@@ -9,6 +9,10 @@
 		grid-column: 2/-1;
 	}
 	
+	@include respond(sm) {
+		display: none;
+	}
+
 	&__item {
 
 	}
@@ -24,5 +28,8 @@
 	&__link:hover {
 		opacity: 100;
 	}
+}
 
+.navigation--sm {
+	
 }
