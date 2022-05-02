@@ -72,8 +72,14 @@
 		display: none;
 	}
 
+	&__navigation-wrapper{
+		grid-column: 4/-1;
+	}
+
 	&__menu-button-container {
 		display: none;
+		background-color: orangered;
+		padding: 15px;
 
 		@include respond(sm) {
 			display: block;
@@ -86,5 +92,7 @@
 	}
 	&__menu-toggle:checked + &__navigation-wrapper {
 		display: block;
+		flex: 200px 1 1;
+		height: auto;
 	}
 }

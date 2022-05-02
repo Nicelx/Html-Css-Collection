@@ -31,5 +31,23 @@
 }
 
 .navigation--sm {
-	
+	display: flex;
+	// flex: 200px 1 1;
+	width: 0;
+	height: 0;
+	flex-direction: column;
+	transition: 2s ease-in;
+
+	&__item {
+		padding: 10px;
+	}
+
+	&__link:link,
+	&__link:visited {
+		font-size: 1.8rem;
+		color: $color-navigation;
+		opacity: 50%;
+		text-decoration: none;
+		transition: .2s ease-in;
+	}
 }
