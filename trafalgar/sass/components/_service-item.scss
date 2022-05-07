@@ -1,5 +1,6 @@
 .service-item {
 	// width: 35rem;
+	position: relative;
 	height: 35.4rem;
 	padding: 5.4rem 4.7rem 4rem 3.7rem;
 
@@ -7,7 +8,21 @@
 	border-radius: 20px;
 	background-color: $color-white;
 
+	@include respond(sm) {
+		box-shadow: 0 10px 25px rgba(229, 233, 246, 0.5);
+		height: auto;
+		padding: 2rem;
+	}
+
 	&__img {
 		margin-bottom: 2.2rem;
+
+		@include respond(sm) {
+			position: absolute;
+			right: 2rem;
+			top:1.5rem;
+			margin-bottom: 1rem;
+			width: 30px;
+		}
 	}
 }

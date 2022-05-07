@@ -10,6 +10,10 @@
 		margin-bottom: 10rem;
 	}
 
+	@include respond(sm) {
+		margin-bottom: 5rem;
+	}
+
 	&__text-block {
 		display: flex;
 		flex-direction: column;
@@ -38,7 +42,7 @@
 		align-items: end;
 		margin-bottom: 7.2rem;
 
-		@media screen and (max-width: $breakpoint-lg) {
+		@include respond(lg) {
 			width: 100%;
 		}
 
@@ -46,6 +50,10 @@
 			grid-template-columns: repeat(2,1fr);
 			padding: 0 5rem;
 		}
+		@include respond(sm) {
+			grid-template-columns: 1fr;
+		}
+
 	}
 
 	&__dots {
