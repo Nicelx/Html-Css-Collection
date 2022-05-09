@@ -47,13 +47,12 @@
 		}
 
 		@include respond(md) {
-			grid-template-columns: repeat(2,1fr);
+			grid-template-columns: repeat(2, 1fr);
 			padding: 0 5rem;
 		}
 		@include respond(sm) {
 			grid-template-columns: 1fr;
 		}
-
 	}
 
 	&__dots {
@@ -71,10 +70,15 @@
 	column-gap: 13.7rem;
 	padding: 0 3px;
 	margin-bottom: 22.9rem;
+	position: relative;
 
 	@include respond(md) {
 		column-gap: 5rem;
 		margin-bottom: 12rem;
+	}
+
+	@include respond(sm) {
+		grid-template-columns: 1fr;
 	}
 
 	&__img {
@@ -85,10 +89,18 @@
 			width: 100%;
 			margin: auto;
 		}
+
+		// @include respond(sm) {
+		// }
+		@include image-small-adjustment;
 	}
 	&__heading {
 		margin-top: 5.7rem;
 		margin-bottom: 8.2rem;
+
+		@include respond(sm) {
+			margin: 2rem 0;
+		}
 	}
 	&__divider {
 		width: 5.6rem;
@@ -99,6 +111,11 @@
 	&__paragraph {
 		margin-bottom: 3.7rem;
 	}
+	&__btn {
+		@include respond(sm) {
+			justify-self: center;
+		}
+	}
 }
 
 .mobile-app {
@@ -108,12 +125,17 @@
 	column-gap: 13rem;
 	margin-left: 12rem;
 	margin-bottom: 25.1rem;
+	position: relative;
 
 	@include respond(md) {
 		column-gap: 5rem;
 		margin-left: 0;
 		padding: 0 2rem;
 		margin-bottom: 12rem;
+	}
+
+	@include respond(sm) {
+		grid-template-columns: 1fr;
 	}
 
 	&__img {
@@ -124,11 +146,21 @@
 			width: 100%;
 			margin: auto;
 		}
+
+		@include image-small-adjustment;
+
+		@include respond(sm) {
+			grid-column: auto;
+		}
 	}
 	&__heading {
 		margin-top: 1rem;
 		margin-bottom: 3rem;
 		line-height: 4.8rem;
+
+		@include respond(sm) {
+			width: 60%;
+		}
 	}
 	&__divider {
 		width: 5.6rem;
@@ -144,6 +176,10 @@
 		align-items: center;
 		padding: 0 4.2rem;
 		justify-content: space-between;
+
+		@include respond(sm) {
+			justify-self: center;
+		}
 	}
 }
 
@@ -160,18 +196,17 @@
 		padding: 0;
 		width: 100%;
 	}
-	
+
 	&__dots {
 		position: absolute;
 		left: 0;
 		top: 54%;
 		z-index: -1;
-		
+
 		@include respond(lg) {
 			left: -50px;
 			top: 30%;
 		}
-		
 	}
 }
 .feedback {
@@ -242,7 +277,7 @@
 
 		@include respond(md) {
 			margin-left: 0;
-			padding: 5px
+			padding: 5px;
 		}
 	}
 	&__dots {
@@ -250,14 +285,13 @@
 		top: -2rem;
 		right: -5rem;
 
-		@include respond(md){
+		@include respond(md) {
 			clip-path: inset(0 0 20px 50px);
 			top: 7px;
 			right: 7px;
 		}
 	}
 }
-
 
 .latest-articles {
 	display: flex;
@@ -288,7 +322,7 @@
 	}
 	&__dots {
 		position: absolute;
-		left:30px;
+		left: 30px;
 		top: 120px;
 		z-index: -1;
 
@@ -311,7 +345,7 @@
 	&__healthcare-right {
 		right: 0.5rem;
 		// clip-path: inset(0 0 1rem 1rem);
-		clip-path: polygon(30% 0 ,100% 0,100% 100%,30% 100%);
+		clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%);
 		top: 2783px;
 	}
 }

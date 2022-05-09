@@ -17,3 +17,12 @@
 		}
 	}	
 }
+
+@mixin image-small-adjustment {
+	@include respond(sm) {
+		position: absolute;
+		right: 10px;
+		top: 20px;
+		width: 20%;
+	}
+}
