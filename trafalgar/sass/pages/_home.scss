@@ -197,6 +197,10 @@
 		width: 100%;
 	}
 
+	@include respond(sm) {
+		margin-bottom: 5rem;
+	}
+
 	&__dots {
 		position: absolute;
 		left: 0;
@@ -234,6 +238,10 @@
 		height: 2px;
 		background-color: $color-white;
 		margin-bottom: 6.6rem;
+
+		@include respond(sm) {
+			margin-bottom: 2rem;
+		}
 	}
 	&__review {
 		display: flex;
@@ -242,6 +250,10 @@
 		@include respond(md) {
 			justify-content: space-between;
 		}
+
+		@include respond(sm) {
+			flex-direction: column;
+		}
 	}
 	&__avatar {
 		width: 14.1rem;
@@ -249,6 +261,11 @@
 		border-radius: 50%;
 		border: 2px solid $color-white;
 		object-fit: cover;
+
+		@include respond(sm) {
+			width: 10rem;
+			height: 10rem;
+		}
 	}
 	&__name-block {
 		margin-left: 2.9rem;
@@ -257,10 +274,15 @@
 		@include respond(md) {
 			margin-left: 0;
 		}
+
 	}
 	&__name {
 		font-size: 2.2rem;
 		line-height: 4.8rem;
+
+		@include respond(sm) {
+			margin-right: 1rem;
+		}
 	}
 	&__status {
 		opacity: 85%;
@@ -305,6 +327,11 @@
 		padding: 0;
 	}
 
+	@include respond(sm) {
+		margin-bottom: 8rem;
+	}
+
+
 	&__heading {
 		margin-bottom: 2.5rem;
 	}
@@ -319,6 +346,10 @@
 		display: flex;
 		margin-bottom: 6.9rem;
 		justify-content: space-between;
+
+		@include respond(sm) {
+			flex-direction: column;
+		}
 	}
 	&__dots {
 		position: absolute;

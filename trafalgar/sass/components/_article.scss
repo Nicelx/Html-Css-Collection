@@ -7,13 +7,21 @@
 	z-index: 5;
 	background-color: $color-white;
 
-	
+	@include respond(sm) {
+		border-radius: 2px;
+		margin-bottom: 2rem;
+		background-color: transparent;
+	}
 
 	&:not(:last-child) {
 		margin-right: 3.4rem;
 		
 		@include respond(md) {
 			margin-right: 15px;
+		}
+
+		@include respond(sm) {
+			margin-right: 0;
 		}
 	}
 
@@ -37,6 +45,12 @@
 		width: 100%;
 		margin-bottom: 2.4rem;
 		border-radius: 2rem 2rem 0 0;
+
+		@include respond(sm) {
+			border-radius: 2px;
+			width: 90%;
+			align-self: center;
+		}
 	}
 	&__link:link, 
 	&__link:visited{
