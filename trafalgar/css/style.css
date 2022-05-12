@@ -275,7 +275,8 @@ body {
     margin-right: 2rem; }
     @media screen and (max-width: 768px) {
       .footer__column {
-        margin-right: 0; } }
+        margin-right: 0;
+        align-items: center; } }
     .footer__column--1 {
       flex: 39rem 1 1; }
       @media screen and (max-width: 1024px) {
@@ -742,10 +743,14 @@ body {
   position: absolute; }
   .dots__footer-left {
     object-fit: none;
-    clip-path: inset(1rem 1rem 0 0);
+    clip-path: inset(10px 10px 0 0);
     bottom: 0.5rem;
     left: 1rem;
     overflow: hidden; }
+    @media screen and (max-width: 768px) {
+      .dots__footer-left {
+        right: 0;
+        left: auto; } }
   .dots__healthcare-right {
     right: 0.5rem;
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%);
@@ -755,10 +760,15 @@ body {
   position: absolute; }
   .tear__articles {
     right: 0;
-    top: 4427px; }
+    top: 4427px;
+    z-index: -1; }
     @media screen and (max-width: 1280px) {
       .tear__articles {
         top: 3890px; } }
+    @media screen and (max-width: 768px) {
+      .tear__articles {
+        top: 3650px;
+        width: 50%; } }
   .tear__our-services {
     left: 0;
     top: 965px;

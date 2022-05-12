@@ -368,10 +368,15 @@
 
 	&__footer-left {
 		object-fit: none;
-		clip-path: inset(1rem 1rem 0 0);
+		clip-path: inset(10px 10px 0 0);
 		bottom: 0.5rem;
 		left: 1rem;
 		overflow: hidden;
+
+		@include respond(sm) {
+			right:0;
+			left: auto;
+		}
 	}
 	&__healthcare-right {
 		right: 0.5rem;
@@ -385,9 +390,15 @@
 	&__articles {
 		right: 0;
 		top: 4427px;
+		z-index: -1;
 
 		@include respond(lg) {
 			top: 3890px;
+		}
+
+		@include respond(sm) {
+			top: 3650px;
+			width: 50%;
 		}
 	}
 	&__our-services {
