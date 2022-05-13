@@ -9,13 +9,13 @@
 		@media screen and (max-width: $breakpoint-md) {
 			@content;
 		}
-	}	
+	}
 
 	@if $breakpoint == sm {
 		@media screen and (max-width: $breakpoint-sm) {
 			@content;
 		}
-	}	
+	}
 }
 
 @mixin image-small-adjustment {

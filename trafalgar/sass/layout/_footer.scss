@@ -1,5 +1,5 @@
 .footer {
-	padding: 10.9rem .5rem;
+	padding: 10.9rem 0.5rem;
 	display: flex;
 	color: $color-white;
 	position: relative;
@@ -17,7 +17,7 @@
 		position: absolute;
 		left: 0;
 		background: linear-gradient(183.41deg, $color-gradient-1 -8.57%, $color-gradient-2 82.96%);
-		width:100%;
+		width: 100%;
 		margin-top: -432px;
 		height: 432px;
 		z-index: -1;
@@ -53,12 +53,12 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 		color: $color-step;
 		font-size: 2.6rem;
 	}
 
-	&__column{ 
+	&__column {
 		display: flex;
 		flex-direction: column;
 		margin-right: 2rem;
@@ -66,7 +66,7 @@
 		@include respond(sm) {
 			margin-right: 0;
 			align-items: center;
-		}		
+		}
 
 		&--1 {
 			flex: 39rem 1 1;
@@ -83,7 +83,9 @@
 			}
 		}
 
-		&--2, &--3, &--4 {
+		&--2,
+		&--3,
+		&--4 {
 			flex: 25rem 1 1;
 
 			@include respond(md) {
@@ -92,7 +94,8 @@
 		}
 	}
 
-	&__paragraph, &__link {
+	&__paragraph,
+	&__link {
 		font-size: 1.8rem;
 		line-height: 2.8rem;
 		font-weight: 300;
@@ -114,7 +117,7 @@
 		font-size: 2rem;
 		line-height: 6rem;
 		font-weight: 700;
-		margin-bottom: .2rem;
+		margin-bottom: 0.2rem;
 	}
 	&__link {
 		line-height: 3.8rem;

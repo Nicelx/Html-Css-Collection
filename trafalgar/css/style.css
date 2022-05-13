@@ -222,7 +222,7 @@ body {
     transition: .2s ease-in; }
 
 .footer {
-  padding: 10.9rem .5rem;
+  padding: 10.9rem 0.5rem;
   display: flex;
   color: #fff;
   position: relative; }
@@ -310,7 +310,7 @@ body {
     font-size: 2rem;
     line-height: 6rem;
     font-weight: 700;
-    margin-bottom: .2rem; }
+    margin-bottom: 0.2rem; }
   .footer__link {
     line-height: 3.8rem; }
   .footer__link:visited, .footer__link:link {
