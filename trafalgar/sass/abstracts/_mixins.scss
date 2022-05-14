@@ -16,6 +16,11 @@
 			@content;
 		}
 	}
+	@if $breakpoint == xl {
+		@media screen and (max-width: $breakpoint-xl) {
+			@content;
+		}
+	}
 }
 
 @mixin image-small-adjustment {

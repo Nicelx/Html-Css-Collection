@@ -17,4 +17,8 @@
 	@include respond(sm) {
 		padding: 0 15px;
 	}
+
+	@include respond(xl) {
+		padding: 0 5px;
+	}
 }
