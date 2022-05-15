@@ -16,8 +16,8 @@
 			@content;
 		}
 	}
-	@if $breakpoint == xl {
-		@media screen and (max-width: $breakpoint-xl) {
+	@if $breakpoint == xsm {
+		@media screen and (max-width: $breakpoint-xsm) {
 			@content;
 		}
 	}

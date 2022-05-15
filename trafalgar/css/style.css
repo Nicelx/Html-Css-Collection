@@ -21,12 +21,21 @@ body {
 
 .heading-primary, .heading-secondary, .heading-tertiary {
   line-height: 5.6rem; }
+  @media screen and (max-width: 480px) {
+    .heading-primary, .heading-secondary, .heading-tertiary {
+      line-height: 3.5rem; } }
 
 .heading-primary {
   font-size: 4.8rem; }
+  @media screen and (max-width: 480px) {
+    .heading-primary {
+      font-size: 3.2rem; } }
 
 .heading-secondary {
   font-size: 3.6rem; }
+  @media screen and (max-width: 480px) {
+    .heading-secondary {
+      font-size: 3rem; } }
 
 .heading-tertiary {
   font-size: 2.4rem; }
@@ -570,6 +579,9 @@ body {
   @media screen and (max-width: 768px) {
     .mobile-app {
       grid-template-columns: 1fr; } }
+  @media screen and (max-width: 480px) {
+    .mobile-app {
+      padding: 0 1rem; } }
   .mobile-app__img {
     grid-row: 1/-1;
     grid-column: 2/3; }
