@@ -92,6 +92,20 @@
 				flex: 50px 1 1;
 			}
 		}
+
+		&--2,
+		&--3 {
+			@include respond(xsm) {
+				flex: 50% 1 1;
+			}
+		}
+
+		&--4 {
+			@include respond(xsm) {
+				flex-direction: row;
+			}
+		}
+
 	}
 
 	&__paragraph,

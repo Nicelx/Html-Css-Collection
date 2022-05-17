@@ -262,6 +262,11 @@
 		font-size: 3.6rem;
 		line-height: 4.8rem;
 		margin-bottom: 2.5rem;
+
+		@include respond(xsm) {
+			font-size: 3rem;
+			line-height: 3.8rem;
+		}
 	}
 	&__divider {
 		width: 5.6rem;
@@ -271,6 +276,10 @@
 
 		@include respond(sm) {
 			margin-bottom: 2rem;
+		}
+
+		@include respond(xsm) {
+			display: none;
 		}
 	}
 	&__review {
@@ -362,6 +371,10 @@
 
 	&__heading {
 		margin-bottom: 2.5rem;
+
+		@include respond(xsm) {
+			margin-bottom: 4rem;
+		}
 	}
 	&__divider {
 		width: 5.6rem;
@@ -369,6 +382,10 @@
 		margin-bottom: 6.6rem;
 		background-color: $color-black;
 		margin-bottom: 8rem;
+
+		@include respond(xsm) {
+			display: none;
+		}
 	}
 	&__articles {
 		display: flex;
