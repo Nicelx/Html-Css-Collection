@@ -13,6 +13,10 @@
 		padding: 5rem 0;
 	}
 
+	@include respond(xsm) {
+		padding: 4rem 0 3rem 0;
+	}
+
 	&__background {
 		position: absolute;
 		left: 0;
@@ -31,6 +35,11 @@
 			margin-top: -500px;
 			height: 500px;
 		}
+
+		// @include respond(xsm) {
+		// 	margin-top: -600px;
+		// 	height: 600px;
+		// }
 	}
 
 	&__logo-box {
@@ -103,6 +112,9 @@
 		&--4 {
 			@include respond(xsm) {
 				flex-direction: row;
+				justify-content: center;
+				flex-wrap: wrap;
+		
 			}
 		}
 

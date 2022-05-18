@@ -249,6 +249,9 @@ body {
     .footer {
       flex-wrap: wrap;
       padding: 5rem 0; } }
+  @media screen and (max-width: 480px) {
+    .footer {
+      padding: 4rem 0 3rem 0; } }
   .footer__background {
     position: absolute;
     left: 0;
@@ -314,7 +317,9 @@ body {
         flex: 50% 1 1; } }
     @media screen and (max-width: 480px) {
       .footer__column--4 {
-        flex-direction: row; } }
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap; } }
   .footer__paragraph, .footer__link {
     font-size: 1.8rem;
     line-height: 2.8rem;
