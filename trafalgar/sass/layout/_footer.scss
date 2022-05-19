@@ -36,10 +36,10 @@
 			height: 500px;
 		}
 
-		// @include respond(xsm) {
-		// 	margin-top: -600px;
-		// 	height: 600px;
-		// }
+		@include respond(xsm) {
+			margin-top: -600px;
+			height: 600px;
+		}
 	}
 
 	&__logo-box {
@@ -89,6 +89,7 @@
 				order: 4;
 				flex-direction: row;
 				margin-top: 2rem;
+				flex: auto;
 			}
 		}
 
@@ -144,9 +145,19 @@
 		line-height: 6rem;
 		font-weight: 700;
 		margin-bottom: 0.2rem;
+
+		@include respond(xsm) {
+			width: 100%;
+			text-align: center;
+		}
 	}
 	&__link {
 		line-height: 3.8rem;
+
+		@include respond(xsm) {
+			width: 50%;
+			text-align: center;
+		}
 	}
 	&__link:visited,
 	&__link:link {
