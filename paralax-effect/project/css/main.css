@@ -59,6 +59,7 @@ body{
 	background-position: center;
 	will-change: transform;
 	z-index: 2;
+	transition: var(--transition);
 }
 
 .layers__base {
@@ -79,7 +80,8 @@ body{
 	text-transform: uppercase;
 	font-weight: 900;
 	color: var(--text);
-	text-shadow: 0 0 15px #8d6d29
+	text-shadow: 0 0 15px #8d6d29;
+	transition: var(--transition);
 }
 .layers__title {
 	font-size: calc(var(--index) * 2.5);
@@ -110,12 +112,18 @@ body{
 	letter-spacing: calc(var(--index) / 7);
 	transform: var(--main-article-transform);
 	will-change: transform;
+	transition: var(--transition);
 }
 .main-article__paragraph {
 	max-width: calc(var(--index) * 30);
 	font-size: calc(var(--index) * .8);
 	margin-top: calc(var(--index) / 2);
 	transform: var(--main-article-transform);
+	transition: var(--transition);
+	will-change: transform;
+}
+
+.content{
 	will-change: transform;
 }
 
