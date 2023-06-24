@@ -262,8 +262,22 @@ body {
 }
 /* navigation */
 
-.primary-heading {
-	margin-top: var(--size-600)
+.primary-header {
+	margin-top: var(--size-700);
+}
+
+.nav-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mobile-nav-toggle {
+	display: none;
+}
+
+@media(max-width: 50em) {
+
 }
 
 .mobile-nav-toggle {
