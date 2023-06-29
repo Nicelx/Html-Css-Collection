@@ -283,7 +283,7 @@ body {
 @media (max-width: 50em) {
 	.primary-navigation {
 		display: none;
-		position: absolute;
+		position: fixed;
 		padding: var(--size-700);
 		inset: 7rem var(--size-400) auto;
 		background: var(--clr-neutral-100);
@@ -291,9 +291,9 @@ body {
 		box-shadow: 0 0 .75em rgb(0,0,0, 0.05);
 		/* box-shadow: 0 0 .75em rgb(0,0,0, 0.05), 0 0 0 1000vmax rgb(0 0 0 / .75); */
 	}
-	.primary-header::before[data-overlay] {
+	.primary-header[data-overlay]::before {
 		content: '';
-		position: absolute;
+		position: fixed;
 		/* height: 100vh; */
 		inset: 0;
 		background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0/ .8));
@@ -323,6 +323,10 @@ body {
 
 	.mobile-nav-toggle {
 		display: block;
+		position: fixed;
+		top: var(--size-700);
+		right: var(--size-400);
+		z-index: 100;
 		cursor: pointer;
 		background: transparent;
 		border: 0;
