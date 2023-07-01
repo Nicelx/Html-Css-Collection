@@ -196,7 +196,16 @@ body {
 
 .nav-list {
 	display: flex;
-	gap: clamp(var(--size-500), 5vw, var(--size-800));
+	gap: clamp(var(--size-400), 5vw, var(--size-700));
+	font-weight: var(--fw-semi-bold);
+}
+.nav-list a {
+	text-decoration: none;
+	color: var(--clr-primary-400);
+}
+.nav-list a:hover,
+.nav-list a:focus {
+	color: var(--clr-accent-400);
 }
 
 @media (max-width: 50em) {
@@ -205,6 +214,8 @@ body {
 		position: fixed;
 		padding: var(--size-700);
 		inset: 7rem var(--size-400) auto;
+		max-width: 25rem;
+		margin-inline: auto;
 		background: var(--clr-neutral-100);
 		border-radius: var(--size-100);
 		box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
@@ -223,15 +234,6 @@ body {
 		gap: var(--size-600);
 		text-align: center;
 		font-weight: bold;
-	}
-
-	.nav-list a {
-		text-decoration: none;
-		color: var(--clr-primary-400);
-	}
-	.nav-list a:hover,
-	.nav-list a:focus {
-		color: var(--clr-accent-400);
 	}
 
 	.primary-navigation[data-visible] {
