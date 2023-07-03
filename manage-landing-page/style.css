@@ -124,6 +124,16 @@ body {
 	color: var(--clr-primary-400);
 }
 
+p:not([class]) {
+	opacity: .7;
+	max-width: 32ch;
+}
+
+p[data-width = "wide"] {
+	max-width: 42ch;
+}
+
+
 .button {
 	display: inline-flex;
 	cursor: pointer;
