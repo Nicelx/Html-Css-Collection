@@ -153,6 +153,10 @@ p[data-width="wide"] {
 	color: var(--clr-accent-400);
 }
 
+.button[data-shadow="none"] {
+	box-shadow: none;
+}
+
 .button:hover,
 .button:focus-visible {
 	background-color: var(--clr-accent-300);
@@ -276,6 +280,19 @@ p[data-width="wide"] {
 
 .primary-footer-form {
 	grid-area: form;
+	display: grid;
+	align-content: space-between;
+}
+
+.primary-footer form {
+	display: flex;
+	gap: var(--size-200);
+}
+
+input:where([type="text"], [type="email"]) {
+	border-radius: 100vw;
+	border: 0;
+	padding: var(--size-300) var(--size-400);
 }
 
 @media (min-width: 50em) {
@@ -300,7 +317,7 @@ p[data-width="wide"] {
 
 .footer-nav {
 	columns: 2;
-	gap: min()
+	gap: clamp(var(--size-200), 30vw, var(--size-900));
 }
 
 .footer-nav a {
