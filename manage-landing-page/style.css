@@ -408,6 +408,7 @@ input:where([type="text"], [type="email"]) {
 	inset: 0 -100vw 0 0;
 	grid-column: 1/-1;
 	grid-row: 1/2;
+	height: 40px;
 	background-color: orange;
 }
 
@@ -424,10 +425,13 @@ input:where([type="text"], [type="email"]) {
 
 .numbered-items div::before {
 	content: "0" counter(count);
+	font-weight: var(--fw-bold);
+	display: flex;
+	align-items: center;
 	background-color: var(--clr-accent-400);
 	color: var(--clr-neutral-100);
-	font-weight: var(--fw-bold);
-	padding: var(--size-200) var(--size-500);
+	padding: 0 var(--size-500);
+	height: 40px;
 	border-radius: 100vw;
 }
 
