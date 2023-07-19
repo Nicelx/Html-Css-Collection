@@ -11,6 +11,8 @@
 			href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+		<!-- <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script> -->
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -83,7 +85,10 @@
 			<section class="padding-block-900">
 				<div class="container">
 					<div class="even-columns">
-						<div class="flow text-center-sm-only margin-bottom-700" style="--flow-spacer: 1.5rem">
+						<div
+							class="flow text-center-sm-only margin-bottom-700"
+							style="--flow-spacer: 1.5rem"
+						>
 							<h2 class="fs-secondary-heading fw-bold">
 								What's different about Manage?
 							</h2>
@@ -138,8 +143,46 @@
 				</div>
 			</section>
 
-			<section class="carousel | padding-block-700">
+			<section class="carousel | padding-block-700 text-center">
 				<h2 class="fs-secondary-heading fw-bold">What they've said</h2>
+				<ul class="slider">
+					<li>
+						<img src="images/avatar-ali.png" alt="" />
+						<h3 class="fw-bold">Ali Bravo</h3>
+						<p data-width="wide">
+							Lorem ipsum dolor si, amet consectetur adipisicing elit.t, amet
+							consectetur adipisicing elit. Ut se, amet consectetur adipisicing
+							elit.qui voluptates nemo!
+						</p>
+					</li>
+					<li>
+						<img src="images/avatar-richard.png" alt="" />
+						<h3 class="fw-bold">Richard</h3>
+						<p data-width="wide">
+							Lorem ipsum dolor si, amet consectetur adipisicing elit.t, amet
+							consectetur adipisicing elit. Ut se, amet consectetur adipisicing
+							elit.qui voluptates nemo!
+						</p>
+					</li>
+					<li>
+						<img src="images/avatar-anisha.png" alt="" />
+						<h3 class="fw-bold">Anisha</h3>
+						<p data-width="wide">
+							Lorem ipsum dolor si, amet consectetur adipisicing elit.t, amet
+							consectetur adipisicing elit. Ut se, amet consectetur adipisicing
+							elit.qui voluptates nemo!
+						</p>
+					</li>
+					<li>
+						<img src="images/avatar-shanai.png" alt="" />
+						<h3 class="fw-bold">Shanai</h3>
+						<p data-width="wide">
+							Lorem ipsum dolor si, amet consectetur adipisicing elit.t, amet
+							consectetur adipisicing elit. Ut se, amet consectetur adipisicing
+							elit.qui voluptates nemo!
+						</p>
+					</li>
+				</ul>
 				<button class="button">Get Started</button>
 			</section>
 
@@ -184,32 +227,28 @@
 									><svg class="social-icon">
 										<use
 											xlink:href="images/social-icons.svg#icon-youtube"
-										></use></svg
-								></a>
+										></use></svg></a>
 							</li>
 							<li>
 								<a aria-label="twitter" href="#"
 									><svg class="social-icon">
 										<use
 											xlink:href="images/social-icons.svg#icon-twitter"
-										></use></svg
-								></a>
+										></use></svg></a>
 							</li>
 							<li>
 								<a aria-label="pinterest" href="#"
 									><svg class="social-icon">
 										<use
 											xlink:href="images/social-icons.svg#icon-pinterest"
-										></use></svg
-								></a>
+										></use></svg></a>
 							</li>
 							<li>
 								<a aria-label="instagram" href="#"
 									><svg class="social-icon">
 										<use
 											xlink:href="images/social-icons.svg#icon-instagram"
-										></use></svg
-								></a>
+										></use></svg></a>
 							</li>
 						</ul>
 					</div>
@@ -242,6 +281,12 @@
 			</div>
 		</footer>
 
-		<script type="module" src="/main.js"></script>
+		<script type="module" src="/main.js">
+				 const slider = new A11YSlider(document.querySelector('.slider'), {
+			  adaptiveHeight: true,
+			  dots: false
+			});
+		</script>
 	</body>
+	<script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
 </html>
