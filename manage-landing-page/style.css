@@ -458,10 +458,30 @@ input:where([type="text"], [type="email"]) {
 	list-style: none;
 }
 
+.a11y-slider-container {
+	margin-block: var(--size-700);
+}
+
 .slider > * {
 	position: relative;
-	width: 400px;
 	flex: 0 0 auto;
+	width: 100%;
+}
+
+@media (min-width: 30em) {
+	.slider > * {
+		position: relative;
+		width: 50%;
+		flex: 0 0 auto;
+	}
+}
+
+@media (min-width: 50em) {
+	.slider > * {
+		position: relative;
+		width: 35%;
+		flex: 0 0 auto;
+	}
 }
 
 .slider-content {
@@ -474,8 +494,30 @@ input:where([type="text"], [type="email"]) {
 	width: var(--size-800);
 	position: relative;
 	margin-inline: auto;
-	top: calc(var(--size-800)/ 2);
+	top: calc(var(--size-800) / 2);
 }
+
+.a11y-slider-dots {
+	display: flex;
+	gap: var(--size-300);
+}
+.a11y-slider-dots li {
+	display: block;
+	width: 12px;
+	height: 12px;
+	padding: 0;
+	border: 1px solid var(--clr-accent-400);
+}
+.a11y-slider-dots li button {
+	display: block;
+	font-size: 0;
+	text-indent: -9999px;
+	border: 1px solid !important;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+
 
 /* Utility classes */
 
