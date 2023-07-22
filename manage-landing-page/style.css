@@ -460,6 +460,7 @@ input:where([type="text"], [type="email"]) {
 
 .a11y-slider-container {
 	margin-block: var(--size-700);
+	margin-inline: var(--size-400);
 }
 
 .slider > * {
@@ -469,6 +470,14 @@ input:where([type="text"], [type="email"]) {
 }
 
 @media (min-width: 30em) {
+	.slider {
+		scroll-padding-inline: 25px;
+	}
+
+	.a11y-slider-container {
+		margin-inline: 0;
+	}
+
 	.slider > * {
 		position: relative;
 		width: 50%;
@@ -499,6 +508,8 @@ input:where([type="text"], [type="email"]) {
 
 .a11y-slider-dots {
 	display: flex;
+	margin-block: var(--size-500);
+	justify-content: center;
 	gap: var(--size-300);
 }
 .a11y-slider-dots li {
@@ -506,18 +517,20 @@ input:where([type="text"], [type="email"]) {
 	width: 12px;
 	height: 12px;
 	padding: 0;
-	border: 1px solid var(--clr-accent-400);
 }
 .a11y-slider-dots li button {
 	display: block;
 	font-size: 0;
 	text-indent: -9999px;
-	border: 1px solid !important;
+	background: transparent;
+	border: 1px solid var(--clr-accent-400) !important;
 	width: 100%;
 	height: 100%;
 	border-radius: 100%;
 }
-
+.a11y-slider-dots li button.active {
+	background: var(--clr-accent-400);
+}
 
 /* Utility classes */
 
