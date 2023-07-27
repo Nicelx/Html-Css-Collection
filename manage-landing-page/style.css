@@ -268,38 +268,50 @@ p[data-width="wide"] {
 	--logo-color: var(--clr-neutral-100);
 }
 
-.primary-footer-wrapper {
+.primary-footer__wrapper {
 	display: grid;
 	gap: var(--size-700);
+	justify-content: center;
 	grid-template-areas:
 		"form"
 		"nav"
-		"logo-social";
+		"social"
+		"logo"
+		"copyright"
 }
 
-.primary-footer-logo-social {
+.primary-footer__logo {
+	grid-area: logo
+}
+
+.primary-footer__form {
+	grid-area: form;
+}
+
+.primary-footer__copyright {
+	grid-area: copyright;
+	opacity: 0.7;
+}
+
+/* .primary-footer-logo-social {
 	grid-area: logo-social;
 
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
 	gap: var(--size-700);
-}
+} */
 
-.primary-footer-nav {
+.primary-footer__nav {
 	grid-area: nav;
 }
 
-.primary-footer-form {
+.primary-footer__form {
 	grid-area: form;
-	display: grid;
-	align-content: space-between;
-}
-
-.primary-footer form {
 	display: flex;
 	gap: var(--size-200);
 }
+
 
 input:where([type="text"], [type="email"]) {
 	border-radius: 100vw;
@@ -308,7 +320,7 @@ input:where([type="text"], [type="email"]) {
 }
 
 @media (min-width: 47em) {
-	.primary-footer-wrapper {
+	.primary-footer__wrapper {
 		grid-template-areas: "logo-social nav form";
 	}
 	.primary-footer-logo-social {
@@ -742,6 +754,10 @@ input:where([type="text"], [type="email"]) {
 
 .margin-bottom-700 {
 	margin-block-end: var(--size-700);
+}
+
+.margin-top-900 {
+	margin-block-start: var(--size-900);
 }
 
 .mx-auto {
