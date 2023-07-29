@@ -8,6 +8,7 @@
     "trillo:watch": "node-sass trillo/sass/main.scss trillo/css/style.css -w",
     "nexter:watch": "node-sass nexter/sass/main.scss nexter/css/style.css -w",
     "trafalgar:watch": "node-sass trafalgar/sass/main.scss trafalgar/css/style.css -w",
+    "tour-and-travel:watch" : "node-sass tour-and-travel/sass/main.scss tour-and-travel/css/style.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass natours/sass/main.scss natours/css/style.comp.css ",
