@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class = "header__nav-block">
+			<div class="header__nav-block">
 				<nav class="header__nav">
 					<ul class="header__list">
 						<li class="header__list"><a href="" class="header__link">Home</a></li>
@@ -24,14 +24,89 @@
 				</div>
 			</div>
 
-			<div class = "header__inf">
-				<div class = "info-block__main">
-					<h1 class = "info-block__title"></h1>
+			<div class="header__info-block">
+				<div class="info-block__main">
+					<h1 class="info-block__title"></h1>
+					<span class="info-block__finder">Holiday finder</span>
+					<form class="info-form" action="">
+						<select class="info-form__select select" name="Location" id="">
+							<option class="info-form__option" value="">Location</option>
+						</select>
+						<select class="info-form__select select" name="Activity" id="">
+							<option class="info-form__option" value="">Activity</option>
+						</select>
+						<select class="info-form__select select" name="Grade" id="">
+							<option class="info-form__option" value="">Grade</option>
+						</select>
+						<select class="info-form__select select" name="Date" id="">
+							<option class="info-form__option" value="">Date</option>
+						</select>
+
+						<button type="submit">Explore</button>
+					</form>
 				</div>
-				<div class = "info-block__image-block">
-					<img src="" alt="">
+				<div class="info-block__image-block">
+					<img src="" alt="" />
 				</div>
 			</div>
 		</header>
+
+		<section>
+			<img src="" alt="" />
+			<div>
+				<h2>A new way to explore the world</h2>
+				<p>
+					For decades travellers have reached for Lonely Planet books when looking to plan
+					and execute their perfect trip, but now, they can also let Lonely Planet
+					Experiences lead the way
+				</p>
+			</div>
+			<button>Learn more</button>
+		</section>
+
+		<section>
+			<div>
+				<h2>Featured destinations</h2>
+				<span>View all</span>
+			</div>
+
+			<div>
+				<figure class="feature-card">
+					<img src="./assets/images/image 1.png" alt="" />
+					<figcaption>
+						Raja Ampat <br />
+						Indonesia
+					</figcaption>
+				</figure>
+				<figure class="feature-card">
+					<img src="./assets/images/image 2.png" alt="" />
+					<figcaption>
+						Fanjingshan <br />
+						China
+					</figcaption>
+				</figure>
+				<figure class="feature-card">
+					<img src="./assets/images/image 3.png" alt="" />
+					<figcaption>Vevey Switzerland</figcaption>
+				</figure>
+				<figure class="feature-card">
+					<img src="./assets/images/image 4.png" alt="" />
+					<figcaption>Skadar Montenegro</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<h2>Guides by Thousand 
+					Sunny</h2>
+				<p>
+					Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.
+				</p>
+				<button>Download</button>
+				>
+			</div>
+			<img src="" alt="" />
+		</section>
 	</body>
 </html>
