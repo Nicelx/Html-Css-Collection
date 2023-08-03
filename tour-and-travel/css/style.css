@@ -121,3 +121,26 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.button {
+  height: 48px;
+  width: 164px;
+  background-color: #FB8F1D;
+  border: none;
+  color: white;
+  border-radius: 2px; }
+
+.button--light {
+  background-color: white;
+  border: 1px solid #FB8F1D; }
+
+.header__nav-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.header__nav {
+  justify-self: end; }
+
+a {
+  text-decoration: none; }

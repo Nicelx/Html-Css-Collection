@@ -4,7 +4,14 @@
 @import './abstract/functions';
 @import './abstract/mixins';
 
+@import './components/buttons';
+
 @import './layout/header';
 @import './layout/footer';
 
 @import './pages/home';
+
+
+a {
+	text-decoration: none;
+}

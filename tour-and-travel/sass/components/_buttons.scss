@@ -1,0 +1,13 @@
+.button {
+	height: 48px;
+	width: 164px;
+	background-color: $color-secondary;
+	border: none;
+	color: white;
+	border-radius: 2px;
+}
+
+.button--light {
+	background-color: white;
+	border: 1px solid $color-secondary;
+}
