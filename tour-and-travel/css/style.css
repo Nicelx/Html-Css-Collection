@@ -139,8 +139,10 @@ table {
   align-items: center;
   justify-content: space-between; }
 
-.header__nav {
-  justify-self: end; }
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 35px; }
 
 a {
   text-decoration: none; }

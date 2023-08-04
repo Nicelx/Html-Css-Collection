@@ -4,7 +4,9 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-	&__nav {
-		justify-self: end;
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 35px;
 	}
 }
