@@ -134,10 +134,19 @@ table {
   background-color: white;
   border: 1px solid #FB8F1D; }
 
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1260px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .header__nav-block {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 43px;
+  margin-bottom: 80px; }
 
 .header__list {
   display: flex;
