@@ -122,13 +122,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  font-family: Inter sans-serif; }
+
 .button {
   height: 48px;
   width: 164px;
   background-color: #FB8F1D;
   border: none;
   color: white;
-  border-radius: 2px; }
+  border-radius: 8px; }
 
 .button--light {
   background-color: white;
@@ -152,6 +155,12 @@ table {
   display: flex;
   align-items: center;
   gap: 35px; }
+
+.header__link, .header__link:visited {
+  color: #B8BECD; }
+
+.header__link:active, .header__link:focus, .header__link:hover {
+  color: #202336; }
 
 a {
   text-decoration: none; }

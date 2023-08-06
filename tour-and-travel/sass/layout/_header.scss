@@ -11,4 +11,13 @@
 		align-items: center;
 		gap: 35px;
 	}
+	&__link,
+	&__link:visited {
+		color: $color-light-gray;
+	}
+	&__link:active,
+	&__link:focus,
+	&__link:hover {
+		color: $color-dark;
+	}
 }
