@@ -9,15 +9,46 @@
 	&__list {
 		display: flex;
 		align-items: center;
-		gap: 35px;
 	}
 	&__link,
 	&__link:visited {
 		color: $color-light-gray;
+		font-family: $Inter;
+		font-size: 16px;
+		margin-right: 35px;
 	}
 	&__link:active,
 	&__link:focus,
 	&__link:hover {
 		color: $color-dark;
+	}
+	&__button {
+		margin-right: 18px;
+		font-size: 17px;
+	}
+
+	&__info-block {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.info-block {
+	&__main {
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		max-width:356px ;
+		font-family: $Playfair;
+		font-size: 64px;
+		line-height: 80px;
+		color: $color-dark;
+		margin-bottom: 74px;
+	}
+	&__finder {
+		font-size: 22px;
+		font-family: $Inter;
+		font-weight: 600;
 	}
 }

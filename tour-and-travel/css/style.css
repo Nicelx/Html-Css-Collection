@@ -135,6 +135,7 @@ table {
 
 .button--light {
   background-color: white;
+  color: #FB8F1D;
   border: 1px solid #FB8F1D; }
 
 .wrapper {
@@ -153,14 +154,41 @@ table {
 
 .header__list {
   display: flex;
-  align-items: center;
-  gap: 35px; }
+  align-items: center; }
 
 .header__link, .header__link:visited {
-  color: #B8BECD; }
+  color: #B8BECD;
+  font-family: Inter sans-serif;
+  font-size: 16px;
+  margin-right: 35px; }
 
 .header__link:active, .header__link:focus, .header__link:hover {
   color: #202336; }
+
+.header__button {
+  margin-right: 18px;
+  font-size: 17px; }
+
+.header__info-block {
+  display: flex;
+  justify-content: space-between; }
+
+.info-block__main {
+  display: flex;
+  flex-direction: column; }
+
+.info-block__title {
+  max-width: 356px;
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  line-height: 80px;
+  color: #202336;
+  margin-bottom: 74px; }
+
+.info-block__finder {
+  font-size: 22px;
+  font-family: Inter sans-serif;
+  font-weight: 600; }
 
 a {
   text-decoration: none; }
