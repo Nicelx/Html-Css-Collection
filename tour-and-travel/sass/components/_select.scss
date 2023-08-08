@@ -1,0 +1,17 @@
+.select {
+	appearance: none;
+		width: 220px;
+		height: 52px;
+		background-color: white;
+		border: .4px solid $color-selection-border;
+		border-radius: 6px;
+		margin: 15px;
+		font-size: 15px;
+		font-family: $Inter;
+		font-weight: 400;
+		padding: -10px -15px;
+		
+		&__option {
+			
+		}
+}

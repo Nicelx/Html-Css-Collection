@@ -50,5 +50,15 @@
 		font-size: 22px;
 		font-family: $Inter;
 		font-weight: 600;
+		position: relative;
+		margin-bottom: 71px;
+	}
+	&__finder::after {
+		position: absolute;
+		top: 20px;
+		width: 32px;
+		height: 2px;
+		background-color: $color-dark;
+
 	}
 }

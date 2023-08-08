@@ -145,6 +145,19 @@ table {
   padding-left: 10px;
   padding-right: 10px; }
 
+.select {
+  appearance: none;
+  width: 220px;
+  height: 52px;
+  background-color: white;
+  border: 0.4px solid #AFB0B9;
+  border-radius: 6px;
+  margin: 15px;
+  font-size: 15px;
+  font-family: Inter sans-serif;
+  font-weight: 400;
+  padding: -10px -15px; }
+
 .header__nav-block {
   display: flex;
   align-items: center;
@@ -188,7 +201,16 @@ table {
 .info-block__finder {
   font-size: 22px;
   font-family: Inter sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 71px; }
+
+.info-block__finder::after {
+  position: absolute;
+  top: 20px;
+  width: 32px;
+  height: 2px;
+  background-color: #202336; }
 
 a {
   text-decoration: none; }
