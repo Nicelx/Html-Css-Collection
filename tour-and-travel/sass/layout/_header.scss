@@ -1,5 +1,5 @@
 .header {
-	&__nav-block{ 
+	&__nav-block {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -39,7 +39,7 @@
 		flex-direction: column;
 	}
 	&__title {
-		max-width:356px ;
+		max-width: 356px;
 		font-family: $Playfair;
 		font-size: 64px;
 		line-height: 80px;
@@ -59,6 +59,11 @@
 		width: 32px;
 		height: 2px;
 		background-color: $color-dark;
-
+	}
+}
+.info-form {
+	&__button {
+		width: 180px;
+		font-family: $Mulish;
 	}
 }

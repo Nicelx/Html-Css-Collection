@@ -212,5 +212,9 @@ table {
   height: 2px;
   background-color: #202336; }
 
+.info-form__button {
+  width: 180px;
+  font-family: "Mulish", sans-serif; }
+
 a {
   text-decoration: none; }
