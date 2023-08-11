@@ -1,0 +1,20 @@
+.ways {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__info-block {
+		width: 481px;
+	}
+	&__title {
+		margin-bottom: 20px;
+		width: 90%;
+	}
+
+	&__paragraph {
+		color: $color-dark-gray;
+		width: 80%;
+		font-weight: 300;
+		line-height: 30px;
+	}
+}

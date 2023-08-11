@@ -1,4 +1,6 @@
 .header {
+	margin-bottom: 286px;
+
 	&__nav-block {
 		display: flex;
 		align-items: center;
@@ -51,14 +53,15 @@
 		font-family: $Inter;
 		font-weight: 600;
 		position: relative;
-		margin-bottom: 71px;
+		margin-bottom: 21px;
 	}
-	&__finder::after {
-		position: absolute;
-		top: 20px;
+	&__divider {
+		display: block;
+		margin-left: 0;
 		width: 32px;
-		height: 2px;
+		height: 3px;
 		background-color: $color-dark;
+		margin-bottom: 48px;
 	}
 }
 .info-form {
