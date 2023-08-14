@@ -2,6 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 292px;
 
 	&__info-block {
 		width: 481px;
@@ -16,5 +17,21 @@
 		width: 80%;
 		font-weight: 300;
 		line-height: 30px;
+		margin-bottom: 38px;
+	}
+}
+
+.destinations {
+	margin-bottom: 237px;
+	&__title-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 51px;
+	}
+	&__image-block {
+		display: flex;
+		justify-content: center;
+		gap: 25px;
 	}
 }

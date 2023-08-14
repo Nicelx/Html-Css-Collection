@@ -219,7 +219,8 @@ table {
 .ways {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 292px; }
   .ways__info-block {
     width: 481px; }
   .ways__title {
@@ -229,7 +230,20 @@ table {
     color: #7D7987;
     width: 80%;
     font-weight: 300;
-    line-height: 30px; }
+    line-height: 30px;
+    margin-bottom: 38px; }
+
+.destinations {
+  margin-bottom: 237px; }
+  .destinations__title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 51px; }
+  .destinations__image-block {
+    display: flex;
+    justify-content: center;
+    gap: 25px; }
 
 a {
   text-decoration: none; }
