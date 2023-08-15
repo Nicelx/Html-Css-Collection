@@ -125,6 +125,9 @@ table {
 * {
   font-family: Inter sans-serif; }
 
+.fw-500 {
+  font-weight: 500; }
+
 .button {
   height: 48px;
   width: 164px;
@@ -244,6 +247,28 @@ table {
     display: flex;
     justify-content: center;
     gap: 25px; }
+  .destinations__viewall {
+    color: #FB8F1D;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer; }
+
+.feature-card {
+  position: relative; }
+  .feature-card__figcaption {
+    position: absolute;
+    background-color: white;
+    bottom: 0px;
+    height: 56px;
+    width: 120px;
+    padding-top: 11px;
+    color: #042521;
+    font-size: 17px;
+    border-radius: 0px 6px 0px 0px;
+    font-weight: 600; }
+    .feature-card__figcaption--light {
+      font-weight: 500;
+      color: #80918E; }
 
 a {
   text-decoration: none; }

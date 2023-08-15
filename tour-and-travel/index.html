@@ -4,9 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> -->
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
@@ -38,10 +41,12 @@
 				<div class="info-block__main">
 					<h1 class="info-block__title">Explore and Travel</h1>
 					<span class="info-block__finder">Holiday finder</span>
-					<hr class = "info-block__divider">
+					<hr class="info-block__divider" />
 					<form class="info-form" action="">
 						<select class="info-form__select select" name="Location" id="">
-							<option class="info-form__option selection__option" value="">Location</option>
+							<option class="info-form__option selection__option" value="">
+								Location
+							</option>
 						</select>
 						<select class="info-form__select select" name="Activity" id="">
 							<option class="info-form__option" value="">Activity</option>
@@ -53,7 +58,7 @@
 							<option class="info-form__option" value="">Date</option>
 						</select>
 
-						<button type="submit" class = "info-form__button button">Explore</button>
+						<button type="submit" class="info-form__button button">Explore</button>
 					</form>
 				</div>
 				<div class="info-block__image-block">
@@ -62,47 +67,72 @@
 			</div>
 		</header>
 
-		<section class = "ways wrapper">
-			<img class = "ways__img" src="./assets/images/Thousand-02 1.png" alt="painted picture balloon, woman with parachut" />
-			<div class = "ways__info-block">
-				<h2 class = "ways__title">A new way to explore the world</h2>
-				<p class = "ways__paragraph">
+		<section class="ways wrapper">
+			<img
+				class="ways__img"
+				src="./assets/images/Thousand-02 1.png"
+				alt="painted picture balloon, woman with parachut"
+			/>
+			<div class="ways__info-block">
+				<h2 class="ways__title">A new way to explore the world</h2>
+				<p class="ways__paragraph">
 					For decades travellers have reached for Lonely Planet books when looking to plan
 					and execute their perfect trip, but now, they can also let Lonely Planet
 					Experiences lead the way
 				</p>
-				<button class = "ways__button button">Learn more</button>
+				<button class="ways__button button">Learn more</button>
 			</div>
 		</section>
 
-		<section class = "destinations wrapper">
-			<div class = "destinations__title-block">
-				<h2 class = "destinations__title">Featured destinations</h2>
-				<span class = "destinations__viewall">View all</span>
+		<section class="destinations wrapper">
+			<div class="destinations__title-block">
+				<h2 class="destinations__title">Featured destinations</h2>
+				<span class="destinations__viewall"
+					>View all   &nbsp;&nbsp;
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="6"
+						height="11"
+						viewBox="0 0 6 11"
+						fill="none"
+					>
+						<path
+							d="M1 1L5 5.5L1 10"
+							stroke="#FB8F1D"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/></svg></span>
 			</div>
 
-			<div class = "destinations__image-block">
+			<div class="destinations__image-block">
 				<figure class="feature-card">
-					<img src="./assets/images/image 1.png" alt="" />
-					<figcaption>
-						Raja Ampat <br />
-						Indonesia
+					<img class = "feature-card__img" src="./assets/images/image 1.png" alt="" />
+					<figcaption class = "feature-card__figcaption">
+						Raja Ampat<br />
+						<span class = "feature-card__figcaption--light">Indonesia</span>
 					</figcaption>
 				</figure>
 				<figure class="feature-card">
-					<img src="./assets/images/image 2.png" alt="" />
-					<figcaption>
+					<img class = "feature-card__img" src="./assets/images/image 2.png" alt="" />
+					<figcaption class = "feature-card__figcaption">
 						Fanjingshan <br />
-						China
+						<span class = "feature-card__figcaption--light">China</span>
 					</figcaption>
 				</figure>
 				<figure class="feature-card">
-					<img src="./assets/images/image 3.png" alt="" />
-					<figcaption>Vevey Switzerland</figcaption>
-				</figure>
-				<figure class="feature-card">
-					<img src="./assets/images/image 4.png" alt="" />
-					<figcaption>Skadar Montenegro</figcaption>
+					<img class = "feature-card__img" src="./assets/images/image 3.png" alt="" />
+					<figcaption class = "feature-card__figcaption">Vevey 
+						
+						<span class = "feature-card__figcaption--light">Switzerland</span>
+						</figcaption>
+					</figure>
+					<figure class="feature-card">
+						<img class = "feature-card__img" src="./assets/images/image 4.png" alt="" />
+						<figcaption class = "feature-card__figcaption">Skadar 
+							
+						<span class = "feature-card__figcaption--light">Montenegro</span>
+						</figcaption>
 				</figure>
 			</div>
 		</section>

@@ -34,4 +34,31 @@
 		justify-content: center;
 		gap: 25px;
 	}
+	&__viewall {
+		color: $color-secondary;
+		font-size: 17px;
+		font-weight: 600;
+		cursor: pointer;
+	}
+}
+.feature-card {
+	position: relative;
+
+	&__figcaption {
+		position: absolute;
+		background-color: white;
+		bottom: 0px;
+		height: 56px;
+		width: 120px;
+		padding-top: 11px;
+		color: $color-dark-2;
+		font-size: 17px;
+		border-radius: 0px 6px 0px 0px;
+		font-weight: 600;
+
+		&--light {
+			font-weight: 500;
+			color: $color-light-gray-2;
+		}
+	}
 }
