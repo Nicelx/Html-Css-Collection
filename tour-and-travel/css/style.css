@@ -270,6 +270,13 @@ table {
       font-weight: 500;
       color: #80918E; }
 
+.guides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .guides__info-block {
+    width: 450px; }
+
 a {
   text-decoration: none; }
 

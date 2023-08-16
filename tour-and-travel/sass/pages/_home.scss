@@ -62,3 +62,13 @@
 		}
 	}
 }
+
+.guides {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__info-block {
+		width: 450px;
+	}
+}
