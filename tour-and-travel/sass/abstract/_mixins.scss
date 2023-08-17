@@ -1,0 +1,15 @@
+@mixin paragraph {
+	color: $color-dark-gray;
+	font-weight: 300;
+	line-height: 30px;
+	margin-bottom: 39px;
+	font-family: $Mulish;
+}
+
+@mixin button-text {
+	font-family: $Inter;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 40px;
+	text-justify: center;
+}

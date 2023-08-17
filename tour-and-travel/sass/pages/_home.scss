@@ -13,11 +13,12 @@
 	}
 
 	&__paragraph {
-		color: $color-dark-gray;
 		width: 80%;
-		font-weight: 300;
-		line-height: 30px;
-		margin-bottom: 38px;
+		@include paragraph;
+	}
+	&__button {
+		@include button-text;
+		height: 48px;
 	}
 }
 
@@ -43,7 +44,7 @@
 }
 .feature-card {
 	position: relative;
-
+	
 	&__figcaption {
 		position: absolute;
 		background-color: white;
@@ -67,8 +68,18 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
+	
 	&__info-block {
 		width: 450px;
+	}
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__paragraph {
+		@include paragraph;
+	}
+	&__button {
+		@include button-text;
+		height: 48px;
 	}
 }

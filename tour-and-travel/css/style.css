@@ -230,11 +230,19 @@ table {
     margin-bottom: 20px;
     width: 90%; }
   .ways__paragraph {
-    color: #7D7987;
     width: 80%;
+    color: #7D7987;
     font-weight: 300;
     line-height: 30px;
-    margin-bottom: 38px; }
+    margin-bottom: 39px;
+    font-family: "Mulish", sans-serif; }
+  .ways__button {
+    font-family: Inter sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    text-justify: center;
+    height: 48px; }
 
 .destinations {
   margin-bottom: 237px; }
@@ -276,6 +284,21 @@ table {
   align-items: center; }
   .guides__info-block {
     width: 450px; }
+  .guides__title {
+    margin-bottom: 20px; }
+  .guides__paragraph {
+    color: #7D7987;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 39px;
+    font-family: "Mulish", sans-serif; }
+  .guides__button {
+    font-family: Inter sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    text-justify: center;
+    height: 48px; }
 
 a {
   text-decoration: none; }
