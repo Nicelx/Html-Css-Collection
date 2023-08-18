@@ -281,7 +281,8 @@ table {
 .guides {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 248px; }
   .guides__info-block {
     width: 450px; }
   .guides__title {
@@ -299,6 +300,11 @@ table {
     line-height: 40px;
     text-justify: center;
     height: 48px; }
+
+.testimonials__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 a {
   text-decoration: none; }
