@@ -91,4 +91,23 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+	&__title {
+		margin-bottom: 60px;
+	}
+	&__star-block {
+		margin-block: 30px;
+	}
+	&__paragraph {
+		font-family: $Mulish;
+		width: 450px;
+		color: black;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 36px;
+		margin-bottom: 40px;
+	}
+
+
+
+
 }

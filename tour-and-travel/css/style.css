@@ -306,6 +306,21 @@ table {
   align-items: center;
   justify-content: space-between; }
 
+.testimonials__title {
+  margin-bottom: 60px; }
+
+.testimonials__star-block {
+  margin-block: 30px; }
+
+.testimonials__paragraph {
+  font-family: "Mulish", sans-serif;
+  width: 450px;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 40px; }
+
 a {
   text-decoration: none; }
 
