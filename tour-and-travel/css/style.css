@@ -321,6 +321,19 @@ table {
   line-height: 36px;
   margin-bottom: 40px; }
 
+.testimonials__name {
+  font-family: Inter sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  line-height: 48px; }
+
+.testimonials__position {
+  font-family: Inter sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.95);
+  font-weight: 400; }
+
 a {
   text-decoration: none; }
 
