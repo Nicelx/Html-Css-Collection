@@ -334,6 +334,25 @@ table {
   color: rgba(0, 0, 0, 0.95);
   font-weight: 400; }
 
+.testimonials__img-block {
+  position: relative; }
+
+.testimonials__arrow-block {
+  border-radius: 16px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 0 30px;
+  position: absolute;
+  width: 132px;
+  height: 60px;
+  background-color: white;
+  right: 0;
+  bottom: 0; }
+
+.testimonials__arrow--left {
+  transform: rotate(180deg);
+  fill: #7D7987; }
+
 a {
   text-decoration: none; }
 
