@@ -86,6 +86,8 @@
 }
 
 .testimonials {
+	margin-bottom: 270px;
+
 	&__container {
 		display: flex;
 		align-items: center;
@@ -142,8 +144,10 @@
 			fill: $color-dark-gray;
 		}
 	}
+}
 
-
-
-
+.stories {
+	&__content-block {
+		display: flex;
+	}
 }
