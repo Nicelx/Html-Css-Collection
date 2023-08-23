@@ -343,12 +343,21 @@ table {
     background-color: white;
     right: 0;
     bottom: 0; }
-  .testimonials__arrow--left {
-    transform: rotate(180deg);
-    fill: #7D7987; }
+  .testimonials__arrow {
+    cursor: pointer; }
+    .testimonials__arrow--left {
+      transform: rotate(180deg);
+      fill: #7D7987; }
+
+.stories__title-block {
+  margin-bottom: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .stories__content-block {
-  display: flex; }
+  display: flex;
+  justify-content: space-evenly; }
 
 a {
   text-decoration: none; }

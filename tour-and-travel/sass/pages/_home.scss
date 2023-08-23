@@ -139,6 +139,7 @@
 		bottom: 0;
 	}
 	&__arrow {
+		cursor: pointer;
 		&--left {
 			transform: rotate(180deg);
 			fill: $color-dark-gray;
@@ -147,7 +148,14 @@
 }
 
 .stories {
+	&__title-block {
+		margin-bottom: 54px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	&__content-block {
 		display: flex;
+		justify-content: space-evenly;
 	}
 }
