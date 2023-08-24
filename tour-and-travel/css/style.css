@@ -359,6 +359,16 @@ table {
   display: flex;
   justify-content: space-evenly; }
 
+.stories-img-block {
+  max-height: 446px;
+  max-width: 266px; }
+
+.stories__img {
+  width: 261px;
+  height: 233px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0; }
+
 a {
   text-decoration: none; }
 
