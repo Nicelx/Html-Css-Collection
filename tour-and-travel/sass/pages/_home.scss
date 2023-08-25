@@ -36,10 +36,7 @@
 		gap: 25px;
 	}
 	&__viewall {
-		color: $color-secondary;
-		font-size: 17px;
-		font-weight: 600;
-		cursor: pointer;
+		@include view-all;
 	}
 }
 .feature-card {
@@ -153,6 +150,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+	&__view-all {
+		@include view-all;
 	}
 	&__content-block {
 		display: flex;

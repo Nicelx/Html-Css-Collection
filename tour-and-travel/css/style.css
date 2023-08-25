@@ -355,6 +355,12 @@ table {
   justify-content: space-between;
   align-items: center; }
 
+.stories__view-all {
+  color: #FB8F1D;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer; }
+
 .stories__content-block {
   display: flex;
   justify-content: space-evenly; }
