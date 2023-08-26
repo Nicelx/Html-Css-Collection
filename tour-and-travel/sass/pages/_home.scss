@@ -156,7 +156,8 @@
 	}
 	&__content-block {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-around;
+		flex-wrap: nowrap;
 	}
 	&-img-block {
 		max-height: 446px;
@@ -168,5 +169,27 @@
 		height: 233px;
 		object-fit: cover;
 		border-radius: 8px 8px 0 0;
+	}
+	&__img-title {
+		font-size: 19px;
+		font-weight: 700;
+		line-height: 30px;
+		color: black;
+		margin-bottom: 13px;
+	}
+
+	&__img-paragraph {
+		color: $color-dark-gray;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 26px;
+		margin-bottom: 23px;
+	}
+	&__read-more {
+		font-size: 15px;
+		color: $color-secondary;
+		font-weight: 600;
+		line-height: 28px;
+		cursor: pointer;
 	}
 }
