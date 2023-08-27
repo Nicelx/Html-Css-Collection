@@ -366,7 +366,7 @@ table {
   justify-content: space-around;
   flex-wrap: nowrap; }
 
-.stories-img-block {
+.stories__img-block {
   max-height: 446px;
   max-width: 266px; }
 
