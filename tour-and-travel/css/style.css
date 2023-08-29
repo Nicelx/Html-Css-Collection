@@ -219,6 +219,20 @@ table {
   font-family: "Mulish", sans-serif;
   margin-top: 21px; }
 
+.footer {
+  width: 100%;
+  height: 482px;
+  padding-top: 70px;
+  background-color: #F9F9FB; }
+  .footer__content-block {
+    display: flex; }
+    .footer__content-block a, .footer__content-block p {
+      color: #848484;
+      font-family: "Mulish", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 28px; }
+
 .ways {
   display: flex;
   align-items: center;
@@ -349,53 +363,48 @@ table {
       transform: rotate(180deg);
       fill: #7D7987; }
 
-.stories__title-block {
-  margin-bottom: 54px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.stories__view-all {
-  color: #FB8F1D;
-  font-size: 17px;
-  font-weight: 600;
-  cursor: pointer; }
-
-.stories__content-block {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap; }
-
-.stories__img-block {
-  max-height: 446px;
-  max-width: 266px; }
-
-.stories__img {
-  width: 261px;
-  height: 233px;
-  object-fit: cover;
-  border-radius: 8px 8px 0 0; }
-
-.stories__img-title {
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 30px;
-  color: black;
-  margin-bottom: 13px; }
-
-.stories__img-paragraph {
-  color: #7D7987;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 26px;
-  margin-bottom: 23px; }
-
-.stories__read-more {
-  font-size: 15px;
-  color: #FB8F1D;
-  font-weight: 600;
-  line-height: 28px;
-  cursor: pointer; }
+.stories {
+  margin-bottom: 271px; }
+  .stories__title-block {
+    margin-bottom: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .stories__view-all {
+    color: #FB8F1D;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer; }
+  .stories__content-block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap; }
+  .stories__img-block {
+    max-height: 446px;
+    max-width: 266px; }
+  .stories__img {
+    width: 261px;
+    height: 233px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0; }
+  .stories__img-title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 30px;
+    color: black;
+    margin-bottom: 13px; }
+  .stories__img-paragraph {
+    color: #7D7987;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 23px; }
+  .stories__read-more {
+    font-size: 15px;
+    color: #FB8F1D;
+    font-weight: 600;
+    line-height: 28px;
+    cursor: pointer; }
 
 a {
   text-decoration: none; }
