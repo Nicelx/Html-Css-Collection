@@ -225,13 +225,27 @@ table {
   padding-top: 70px;
   background-color: #F9F9FB; }
   .footer__content-block {
-    display: flex; }
-    .footer__content-block a, .footer__content-block p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 77px; }
+    .footer__content-block a, .footer__content-block p, .footer__content-block span {
       color: #848484;
       font-family: "Mulish", sans-serif;
       font-size: 18px;
       font-weight: 300;
       line-height: 28px; }
+    .footer__content-block h3 {
+      color: black;
+      font-family: "Mulish", sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 60px; }
+  .footer__icon-block {
+    max-width: 30%; }
+  .footer__icon {
+    margin-bottom: 26px; }
+  .footer__paragraph {
+    margin-bottom: 55px; }
 
 .ways {
   display: flex;
