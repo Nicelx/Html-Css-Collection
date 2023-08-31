@@ -30,6 +30,16 @@
 		max-width: 30%;
 	}
 
+	&__divider {
+		margin-bottom: 32px;
+	}
+
+	&__icons-block {
+		display: flex;
+		justify-content: center;
+		gap: 35px;
+	}
+
 	&__icon {
 		margin-bottom: 26px;
 	}

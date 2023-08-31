@@ -242,6 +242,12 @@ table {
       line-height: 60px; }
   .footer__icon-block {
     max-width: 30%; }
+  .footer__divider {
+    margin-bottom: 32px; }
+  .footer__icons-block {
+    display: flex;
+    justify-content: center;
+    gap: 35px; }
   .footer__icon {
     margin-bottom: 26px; }
   .footer__paragraph {
