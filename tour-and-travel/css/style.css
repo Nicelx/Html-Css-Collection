@@ -381,7 +381,8 @@ table {
     cursor: pointer; }
     .testimonials__arrow--left {
       transform: rotate(180deg);
-      fill: #7D7987; }
+      background: red;
+      mask: url(../../assets/svg/arrow-right.svg); }
 
 .stories {
   margin-bottom: 271px; }
