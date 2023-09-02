@@ -138,10 +138,12 @@
 	&__arrow {
 		cursor: pointer;
 		&--left {
+			width: 100px;
+			height: 100px;
 			transform: rotate(180deg);
-			// fill: red;
-			background: red;
-			mask: url(../../assets/svg/arrow-right.svg)
+			mask: url(../../assets/svg/arrow-right.svg);
+			background-image: url(../../assets/svg/arrow-right.svg);
+			background-color: red;
 		}
 	}
 }
