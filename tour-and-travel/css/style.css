@@ -214,6 +214,11 @@ table {
   background-color: #202336;
   margin-bottom: 48px; }
 
+.info-block__circle {
+  position: absolute;
+  top: 70px;
+  left: -80px; }
+
 .info-form__button {
   width: 180px;
   font-family: "Mulish", sans-serif;

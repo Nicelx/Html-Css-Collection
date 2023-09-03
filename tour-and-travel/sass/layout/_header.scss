@@ -63,6 +63,11 @@
 		background-color: $color-dark;
 		margin-bottom: 48px;
 	}
+	&__circle {
+		position: absolute;
+		top: 70px;
+		left: -80px;
+	}
 }
 .info-form {
 	&__button {
