@@ -219,6 +219,11 @@ table {
   top: 70px;
   left: -80px; }
 
+.info-block__circle-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
 .info-form__button {
   width: 180px;
   font-family: "Mulish", sans-serif;

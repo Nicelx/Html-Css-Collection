@@ -36,6 +36,7 @@
 }
 
 .info-block {
+	// position: relative;
 	&__main {
 		display: flex;
 		flex-direction: column;
@@ -67,6 +68,11 @@
 		position: absolute;
 		top: 70px;
 		left: -80px;
+	}
+	&__circle-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
 	}
 }
 .info-form {
