@@ -390,12 +390,7 @@ table {
   .testimonials__arrow {
     cursor: pointer; }
     .testimonials__arrow--left {
-      width: 100px;
-      height: 100px;
-      transform: rotate(180deg);
-      mask: url(../../assets/svg/arrow-right.svg);
-      background-image: url(../../assets/svg/arrow-right.svg);
-      background-color: red; }
+      transform: rotate(180deg); }
 
 .stories {
   margin-bottom: 271px; }

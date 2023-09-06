@@ -138,12 +138,7 @@
 	&__arrow {
 		cursor: pointer;
 		&--left {
-			width: 100px;
-			height: 100px;
 			transform: rotate(180deg);
-			mask: url(../../assets/svg/arrow-right.svg);
-			background-image: url(../../assets/svg/arrow-right.svg);
-			background-color: red;
 		}
 	}
 }
