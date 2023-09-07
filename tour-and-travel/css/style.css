@@ -189,7 +189,8 @@ table {
 
 .info-block__main {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
 
 .info-block__title {
   max-width: 356px;
@@ -222,7 +223,8 @@ table {
 .info-block__circle-2 {
   position: absolute;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  width: 20px; }
 
 .info-form__button {
   width: 180px;
@@ -269,7 +271,8 @@ table {
   justify-content: space-between;
   margin-bottom: 292px; }
   .ways__info-block {
-    width: 481px; }
+    width: 481px;
+    position: relative; }
   .ways__title {
     margin-bottom: 20px;
     width: 90%; }
@@ -287,8 +290,14 @@ table {
     line-height: 40px;
     text-justify: center;
     height: 48px; }
+  .ways__circle {
+    position: absolute;
+    width: 20px;
+    left: 300px;
+    bottom: 40px; }
 
 .destinations {
+  position: relative;
   margin-bottom: 237px; }
   .destinations__title-block {
     display: flex;
@@ -304,6 +313,15 @@ table {
     font-size: 17px;
     font-weight: 600;
     cursor: pointer; }
+  .destinations__circle, .destinations__circle-2 {
+    position: absolute;
+    width: 20px; }
+  .destinations__circle {
+    top: -20px;
+    right: 280px; }
+  .destinations__circle-2 {
+    bottom: -45px;
+    right: 52%; }
 
 .feature-card {
   position: relative; }
@@ -328,7 +346,8 @@ table {
   align-items: center;
   margin-bottom: 248px; }
   .guides__info-block {
-    width: 450px; }
+    width: 450px;
+    position: relative; }
   .guides__title {
     margin-bottom: 20px; }
   .guides__paragraph {
@@ -344,6 +363,11 @@ table {
     line-height: 40px;
     text-justify: center;
     height: 48px; }
+  .guides__circle {
+    position: absolute;
+    top: -87px;
+    left: 38px;
+    width: 20px; }
 
 .testimonials {
   margin-bottom: 270px; }

@@ -40,6 +40,7 @@
 	&__main {
 		display: flex;
 		flex-direction: column;
+		position: relative;
 	}
 	&__title {
 		max-width: 356px;
@@ -73,6 +74,7 @@
 		position: absolute;
 		bottom: 0;
 		right: 0;
+		width: 20px;
 	}
 }
 .info-form {
