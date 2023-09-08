@@ -149,6 +149,10 @@ table {
   padding-left: 10px;
   padding-right: 10px; }
 
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: calc($breakpoint-tablet - 20%); } }
+
 .select {
   appearance: none;
   width: 220px;

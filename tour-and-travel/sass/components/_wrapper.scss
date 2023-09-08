@@ -5,3 +5,8 @@
 	padding-left: 10px;
 	padding-right: 10px;
 }
+@media screen and (max-width: $breakpoint-tablet) {
+	.wrapper {
+		max-width: calc($breakpoint-tablet - 20%);
+	}
+}
