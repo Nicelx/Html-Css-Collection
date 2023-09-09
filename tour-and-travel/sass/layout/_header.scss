@@ -65,6 +65,11 @@
 		background-color: $color-dark;
 		margin-bottom: 48px;
 	}
+
+	&__img {
+		max-width: 100%;
+	}
+
 	&__circle {
 		position: absolute;
 		top: 70px;

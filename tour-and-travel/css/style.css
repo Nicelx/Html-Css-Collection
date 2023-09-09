@@ -151,7 +151,8 @@ table {
 
 @media screen and (max-width: 1024px) {
   .wrapper {
-    max-width: calc($breakpoint-tablet - 20%); } }
+    color: red;
+    max-width: 1004px; } }
 
 .select {
   appearance: none;
@@ -218,6 +219,9 @@ table {
   height: 3px;
   background-color: #202336;
   margin-bottom: 48px; }
+
+.info-block__img {
+  max-width: 100%; }
 
 .info-block__circle {
   position: absolute;

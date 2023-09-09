@@ -7,6 +7,7 @@
 }
 @media screen and (max-width: $breakpoint-tablet) {
 	.wrapper {
-		max-width: calc($breakpoint-tablet - 20%);
+		color: red;
+		max-width: $breakpoint-tablet - 20px;
 	}
 }
