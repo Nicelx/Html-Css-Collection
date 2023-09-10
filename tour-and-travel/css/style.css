@@ -154,6 +154,10 @@ table {
     color: red;
     max-width: 1004px; } }
 
+@media screen and (max-width: 767px) {
+  .wrapper {
+    color: green; } }
+
 .select {
   appearance: none;
   width: 220px;
@@ -183,11 +187,20 @@ table {
     font-family: Inter sans-serif;
     font-size: 16px;
     margin-right: 35px; }
+    @media screen and (max-width: 1024px) {
+      .header__link, .header__link:visited {
+        font-size: 15px;
+        margin-right: 10px; } }
   .header__link:active, .header__link:focus, .header__link:hover {
     color: #202336; }
   .header__button {
     margin-right: 18px;
     font-size: 17px; }
+    @media screen and (max-width: 1024px) {
+      .header__button {
+        width: 15vw;
+        font-size: 15px;
+        margin-right: 10px; } }
   .header__info-block {
     display: flex;
     justify-content: space-between; }
@@ -204,6 +217,11 @@ table {
   line-height: 80px;
   color: #202336;
   margin-bottom: 74px; }
+  @media screen and (max-width: 1024px) {
+    .info-block__title {
+      font-size: 50px;
+      line-height: 70px;
+      margin-right: 10px; } }
 
 .info-block__finder {
   font-size: 22px;
@@ -219,6 +237,10 @@ table {
   height: 3px;
   background-color: #202336;
   margin-bottom: 48px; }
+
+.info-block__image-block {
+  display: flex;
+  align-items: center; }
 
 .info-block__img {
   max-width: 100%; }

@@ -11,3 +11,9 @@
 		max-width: $breakpoint-tablet - 20px;
 	}
 }
+
+@media screen and (max-width: $breakpoint-mobile) {
+	.wrapper {
+		color: green;
+	}
+}
