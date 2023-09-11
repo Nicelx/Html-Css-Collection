@@ -241,6 +241,9 @@ table {
 .info-block__image-block {
   display: flex;
   align-items: center; }
+  @media screen and (max-width: 1024px) {
+    .info-block__image-block {
+      width: 50%; } }
 
 .info-block__img {
   max-width: 100%; }
@@ -260,6 +263,19 @@ table {
   width: 180px;
   font-family: "Mulish", sans-serif;
   margin-top: 21px; }
+  @media screen and (max-width: 1024px) {
+    .info-form__button {
+      width: 150px; } }
+
+@media screen and (max-width: 1024px) {
+  .info-form__select {
+    width: 180px;
+    margin: 0 0 10px 0; } }
+
+@media screen and (max-width: 1024px) {
+  .info-form {
+    display: flex;
+    flex-direction: column; } }
 
 .footer {
   width: 100%;

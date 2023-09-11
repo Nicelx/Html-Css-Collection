@@ -87,6 +87,10 @@
 	&__image-block {
 		display: flex;
 		align-items: center;
+
+		@media screen and (max-width:$breakpoint-tablet) {
+			width: 50%;
+		}
 	}
 	&__img {
 		max-width: 100%;
@@ -109,5 +113,21 @@
 		width: 180px;
 		font-family: $Mulish;
 		margin-top: 21px;
+
+		@media screen and (max-width: $breakpoint-tablet) {
+			width: 150px;
+		}
+	}
+	&__select {
+		@media screen and (max-width: $breakpoint-tablet) {
+			width: 180px;
+			margin: 0 0 10px 0;
+		}
+
+	}
+
+	@media screen and (max-width: $breakpoint-tablet) {
+		display: flex;
+		flex-direction: column;		
 	}
 }
