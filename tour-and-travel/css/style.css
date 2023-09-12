@@ -341,6 +341,9 @@ table {
     width: 20px;
     left: 300px;
     bottom: 40px; }
+  @media screen and (max-width: 1024px) {
+    .ways__img {
+      width: 10px; } }
 
 .destinations {
   position: relative;

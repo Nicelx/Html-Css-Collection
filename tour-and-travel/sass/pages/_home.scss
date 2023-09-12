@@ -27,6 +27,12 @@
 		left: 300px;
 		bottom: 40px;
 	}
+	&__img {
+		@media screen and (max-width: $breakpoint-tablet) {
+			width: 10px;
+			
+		}
+	}
 }
 
 .destinations {
