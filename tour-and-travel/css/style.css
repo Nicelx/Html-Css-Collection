@@ -343,7 +343,8 @@ table {
     bottom: 40px; }
   @media screen and (max-width: 1024px) {
     .ways__img {
-      width: 10px; } }
+      width: 40vw;
+      padding-right: 20px; } }
 
 .destinations {
   position: relative;
@@ -356,7 +357,8 @@ table {
   .destinations__image-block {
     display: flex;
     justify-content: center;
-    gap: 25px; }
+    gap: 25px;
+    flex-wrap: wrap; }
   .destinations__viewall {
     color: #FB8F1D;
     font-size: 17px;
@@ -520,3 +522,7 @@ h2 {
   font-size: 36px;
   font-weight: 700;
   line-height: 50px; }
+  @media screen and (max-width: 1024px) {
+    h2 {
+      font-size: 28px;
+      line-height: 40px; } }

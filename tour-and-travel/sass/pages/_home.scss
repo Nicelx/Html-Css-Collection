@@ -29,8 +29,8 @@
 	}
 	&__img {
 		@media screen and (max-width: $breakpoint-tablet) {
-			width: 10px;
-			
+			width: 40vw;
+			padding-right: 20px;
 		}
 	}
 }
@@ -48,6 +48,7 @@
 		display: flex;
 		justify-content: center;
 		gap: 25px;
+		flex-wrap: wrap;
 	}
 	&__viewall {
 		@include view-all;
@@ -67,6 +68,8 @@
 }
 .feature-card {
 	position: relative;
+
+	
 	
 	&__figcaption {
 		position: absolute;
