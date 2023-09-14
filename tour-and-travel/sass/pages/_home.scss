@@ -116,6 +116,12 @@
 		left: 38px;
 		width: 20px;
 	}
+	&__img {
+		@media screen and (max-width: $breakpoint-tablet) {
+			width: 40vw;
+			padding-left: 20px;
+		}
+	}
 }
 
 .testimonials {

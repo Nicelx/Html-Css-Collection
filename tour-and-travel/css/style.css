@@ -419,6 +419,10 @@ table {
     top: -87px;
     left: 38px;
     width: 20px; }
+  @media screen and (max-width: 1024px) {
+    .guides__img {
+      width: 40vw;
+      padding-left: 20px; } }
 
 .testimonials {
   margin-bottom: 270px; }
