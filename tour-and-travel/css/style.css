@@ -442,6 +442,11 @@ table {
     font-weight: 400;
     line-height: 36px;
     margin-bottom: 40px; }
+    @media screen and (max-width: 1024px) {
+      .testimonials__paragraph {
+        width: 40vw;
+        font-size: 20px;
+        line-height: 32px; } }
   .testimonials__name {
     font-family: Inter sans-serif;
     font-size: 22px;
@@ -455,6 +460,9 @@ table {
     font-weight: 400; }
   .testimonials__img-block {
     position: relative; }
+  @media screen and (max-width: 1024px) {
+    .testimonials__img {
+      width: 40vw; } }
   .testimonials__arrow-block {
     border-radius: 16px 0px 0px 0px;
     display: flex;

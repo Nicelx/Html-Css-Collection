@@ -53,7 +53,8 @@
 	&__viewall {
 		@include view-all;
 	}
-	&__circle, &__circle-2 {
+	&__circle,
+	&__circle-2 {
 		position: absolute;
 		width: 20px;
 	}
@@ -62,15 +63,13 @@
 		right: 280px;
 	}
 	&__circle-2 {
-		bottom: -45px ;
+		bottom: -45px;
 		right: 52%;
 	}
 }
 .feature-card {
 	position: relative;
 
-	
-	
 	&__figcaption {
 		position: absolute;
 		background-color: white;
@@ -95,7 +94,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 248px;
-	
+
 	&__info-block {
 		width: 450px;
 		position: relative;
@@ -146,6 +145,12 @@
 		font-weight: 400;
 		line-height: 36px;
 		margin-bottom: 40px;
+
+		@media screen and (max-width: $breakpoint-tablet) {
+			width: 40vw;
+			font-size: 20px;
+			line-height: 32px;
+		}
 	}
 	&__name {
 		font-family: $Inter;
@@ -157,12 +162,18 @@
 	&__position {
 		font-family: $Inter;
 		font-size: 18px;
-		color: rgba(0,0,0,0.95);
+		color: rgba(0, 0, 0, 0.95);
 		font-weight: 400;
 	}
 
 	&__img-block {
 		position: relative;
+	}
+
+	&__img {
+		@media screen and (max-width: $breakpoint-tablet) {
+			width: 40vw;
+		}
 	}
 
 	&__arrow-block {
@@ -187,7 +198,7 @@
 
 .stories {
 	margin-bottom: 271px;
-	
+
 	&__title-block {
 		margin-bottom: 54px;
 		display: flex;
