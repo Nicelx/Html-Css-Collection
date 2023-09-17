@@ -1,4 +1,6 @@
 .header {
+
+	
 	margin-bottom: 286px;
 
 	&__nav-block {
@@ -7,6 +9,11 @@
 		justify-content: space-between;
 		margin-top: 43px;
 		margin-bottom: 80px;
+
+		@media screen and (max-width: $breakpoint-mobile) {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 	&__list {
 		display: flex;
@@ -38,11 +45,20 @@
 			font-size: 15px;
 			margin-right: 10px;
 		}
+		@media screen and (max-width: $breakpoint-mobile) {
+		width: 12vw;
+		margin-right: 5px;
+		}
 	}
 
 	&__info-block {
 		display: flex;
 		justify-content: space-between;
+	}
+	&__logo {
+		@media screen and (max-width: $breakpoint-mobile) {
+		display: none;
+		}
 	}
 }
 

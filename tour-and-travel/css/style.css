@@ -179,6 +179,10 @@ table {
     justify-content: space-between;
     margin-top: 43px;
     margin-bottom: 80px; }
+    @media screen and (max-width: 767px) {
+      .header__nav-block {
+        display: flex;
+        flex-direction: column; } }
   .header__list {
     display: flex;
     align-items: center; }
@@ -201,9 +205,16 @@ table {
         width: 15vw;
         font-size: 15px;
         margin-right: 10px; } }
+    @media screen and (max-width: 767px) {
+      .header__button {
+        width: 12vw;
+        margin-right: 5px; } }
   .header__info-block {
     display: flex;
     justify-content: space-between; }
+  @media screen and (max-width: 767px) {
+    .header__logo {
+      display: none; } }
 
 .info-block__main {
   display: flex;
