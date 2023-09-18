@@ -182,10 +182,18 @@ table {
     @media screen and (max-width: 767px) {
       .header__nav-block {
         display: flex;
-        flex-direction: column; } }
+        justify-content: center;
+        margin-bottom: 40px; } }
   .header__list {
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 767px) {
+      .header__list {
+        display: flex;
+        flex-direction: column; } }
+  @media screen and (max-width: 767px) {
+    .header__list-item {
+      margin-bottom: 10px; } }
   .header__link, .header__link:visited {
     color: #B8BECD;
     font-family: Inter sans-serif;
@@ -205,10 +213,6 @@ table {
         width: 15vw;
         font-size: 15px;
         margin-right: 10px; } }
-    @media screen and (max-width: 767px) {
-      .header__button {
-        width: 12vw;
-        margin-right: 5px; } }
   .header__info-block {
     display: flex;
     justify-content: space-between; }
