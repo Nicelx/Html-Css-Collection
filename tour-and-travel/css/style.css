@@ -216,6 +216,10 @@ table {
   .header__info-block {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 767px) {
+      .header__info-block {
+        flex-direction: column;
+        align-items: center; } }
   @media screen and (max-width: 767px) {
     .header__logo {
       display: none; } }
@@ -281,6 +285,9 @@ table {
   @media screen and (max-width: 1024px) {
     .info-form__button {
       width: 150px; } }
+  @media screen and (max-width: 767px) {
+    .info-form__button {
+      margin-bottom: 30px; } }
 
 @media screen and (max-width: 1024px) {
   .info-form__select {
@@ -291,6 +298,10 @@ table {
   .info-form {
     display: flex;
     flex-direction: column; } }
+
+@media screen and (max-width: 767px) {
+  .info-form {
+    align-items: center; } }
 
 .footer {
   width: 100%;
@@ -331,12 +342,24 @@ table {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 292px; }
+  @media screen and (max-width: 767px) {
+    .ways {
+      flex-direction: column; } }
   .ways__info-block {
     width: 481px;
     position: relative; }
+    @media screen and (max-width: 767px) {
+      .ways__info-block {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center; } }
   .ways__title {
     margin-bottom: 20px;
     width: 90%; }
+    @media screen and (max-width: 767px) {
+      .ways__title {
+        text-align: center; } }
   .ways__paragraph {
     width: 80%;
     color: #7D7987;
@@ -360,6 +383,10 @@ table {
     .ways__img {
       width: 40vw;
       padding-right: 20px; } }
+  @media screen and (max-width: 1024px) {
+    .ways__img {
+      width: 80vw;
+      margin-bottom: 30px; } }
 
 .destinations {
   position: relative;

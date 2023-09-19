@@ -65,6 +65,10 @@
 	&__info-block {
 		display: flex;
 		justify-content: space-between;
+		@media screen and (max-width:$breakpoint-mobile) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__logo {
 		@media screen and (max-width: $breakpoint-mobile) {
@@ -75,6 +79,7 @@
 
 .info-block {
 	// position: relative;
+
 	&__main {
 		display: flex;
 		flex-direction: column;
@@ -136,13 +141,17 @@
 	}
 }
 .info-form {
+
 	&__button {
 		width: 180px;
 		font-family: $Mulish;
 		margin-top: 21px;
-
+		
 		@media screen and (max-width: $breakpoint-tablet) {
 			width: 150px;
+		}
+		@media screen and (max-width: $breakpoint-mobile) {
+			margin-bottom: 30px;
 		}
 	}
 	&__select {
@@ -152,9 +161,12 @@
 		}
 
 	}
-
+	
 	@media screen and (max-width: $breakpoint-tablet) {
 		display: flex;
 		flex-direction: column;		
+	}
+	@media screen and (max-width:$breakpoint-mobile) {
+		align-items: center;
 	}
 }

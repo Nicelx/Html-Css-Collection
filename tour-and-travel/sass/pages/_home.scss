@@ -4,13 +4,28 @@
 	justify-content: space-between;
 	margin-bottom: 292px;
 
+	@media screen and (max-width:$breakpoint-mobile) {
+		flex-direction: column;
+	}
+
 	&__info-block {
 		width: 481px;
 		position: relative;
+
+		@media screen and (max-width:$breakpoint-mobile) {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+		}
 	}
 	&__title {
 		margin-bottom: 20px;
 		width: 90%;
+
+		@media screen and (max-width:$breakpoint-mobile) {
+			text-align: center;
+		}
 	}
 
 	&__paragraph {
@@ -31,6 +46,10 @@
 		@media screen and (max-width: $breakpoint-tablet) {
 			width: 40vw;
 			padding-right: 20px;
+		}
+		@media screen and (max-width: $breakpoint-tablet) {
+			width: 80vw;
+			margin-bottom: 30px;
 		}
 	}
 }
