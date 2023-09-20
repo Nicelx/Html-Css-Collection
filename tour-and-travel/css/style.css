@@ -438,6 +438,10 @@ table {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 248px; }
+  @media screen and (max-width: 767px) {
+    .guides {
+      flex-direction: column;
+      margin-bottom: 120px; } }
   .guides__info-block {
     width: 450px;
     position: relative; }
@@ -465,6 +469,10 @@ table {
     .guides__img {
       width: 40vw;
       padding-left: 20px; } }
+  @media screen and (max-width: 767px) {
+    .guides__img {
+      order: -1;
+      width: 80vw; } }
 
 .testimonials {
   margin-bottom: 270px; }

@@ -114,6 +114,11 @@
 	align-items: center;
 	margin-bottom: 248px;
 
+	@media screen and (max-width: $breakpoint-mobile) {
+		flex-direction: column;
+		margin-bottom: 120px;
+	}
+
 	&__info-block {
 		width: 450px;
 		position: relative;
@@ -138,6 +143,10 @@
 		@media screen and (max-width: $breakpoint-tablet) {
 			width: 40vw;
 			padding-left: 20px;
+		}
+		@media screen and (max-width: $breakpoint-mobile) {
+			order: -1;
+			width: 80vw;
 		}
 	}
 }
