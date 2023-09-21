@@ -311,7 +311,11 @@ table {
   .footer__content-block {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 77px; }
+    @media screen and (max-width: 767px) {
+      .footer__content-block > * {
+        width: 40vw; } }
     .footer__content-block a, .footer__content-block p, .footer__content-block span {
       color: #848484;
       font-family: "Mulish", sans-serif;
@@ -326,6 +330,9 @@ table {
       line-height: 60px; }
   .footer__icon-block {
     max-width: 30%; }
+    @media screen and (max-width: 767px) {
+      .footer__icon-block {
+        max-width: none; } }
   .footer__divider {
     margin-bottom: 32px; }
   .footer__icons-block {
@@ -445,6 +452,10 @@ table {
   .guides__info-block {
     width: 450px;
     position: relative; }
+    @media screen and (max-width: 767px) {
+      .guides__info-block {
+        width: 80vw;
+        text-align: center; } }
   .guides__title {
     margin-bottom: 20px; }
   .guides__paragraph {

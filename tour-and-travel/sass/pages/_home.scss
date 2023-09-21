@@ -122,6 +122,11 @@
 	&__info-block {
 		width: 450px;
 		position: relative;
+
+		@media screen and (max-width: $breakpoint-mobile) {
+			width: 80vw;
+			text-align: center;
+		}
 	}
 	&__title {
 		margin-bottom: 20px;

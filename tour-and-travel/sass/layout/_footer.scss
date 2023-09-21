@@ -7,7 +7,15 @@
 	&__content-block {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		margin-bottom: 77px;
+
+		&>* {
+			@media screen and (max-width: $breakpoint-mobile) {
+				width: 40vw;		
+			}
+			
+		}
 
 		& a, & p, & span {
 			color: $color-gray;
@@ -28,6 +36,10 @@
 
 	&__icon-block {
 		max-width: 30%;
+
+		@media screen and (max-width: $breakpoint-mobile) {
+			max-width: none;
+		}
 	}
 
 	&__divider {
