@@ -19,6 +19,11 @@ img {
 	flex-direction: column;
 	align-items: center;
 }
+@media screen and (max-width: 1300px) {
+	.wrapper {
+		width: 98vw;
+	}
+}
 .p {
 	font-size: 28px;
 	line-height: 1.4;
@@ -31,7 +36,7 @@ img {
 
 .header {
 	position: relative;
-	width: 100vw;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -117,6 +122,11 @@ img {
 	overflow: hidden;
 	display: flex;
 }
+.memories__p {
+	font-size: 24px;
+	text-align: center;
+	line-height: 1.5;
+}
 .memories__img {
 	height: 60vh;
 	object-fit: contain;
@@ -150,6 +160,11 @@ img {
 }
 .footer__title {
 	font-size: 30px;
+	text-align: center;
+}
+.footer_p {
+	width: 80%;
+	text-align: center;
 }
 .footer__block {
 	width: 100vw;
@@ -163,7 +178,7 @@ img {
 	display: flex;
 	flex-shrink: 0;
 	justify-self: start;
-	transition: all 1.5s linear;
+	transition: all 2s linear;
 }
 .footer__btn {
 	width: 120px;
@@ -171,8 +186,27 @@ img {
 	background-color: azure;
 	border-radius: 2px;
 	border: none;
+	color: dimgray
 }
-
+.footer__me {
+	height: 0vh;
+	object-fit: contain;
+	opacity: 0;
+	transition: all 4s;
+}
+.footer__wants {
+	opacity: 0;
+	transition: all 4s linear;
+}
+.footer__wants_2 {
+	opacity: 0;
+	transition: all 4s linear;
+	transition-delay: 2s;
+}
+.footer__block_3 {
+	transition: all 5s linear;
+	transition-delay: 3s;
+}
 @keyframes footerAnimation {
 	50% {
 		opacity: 0;
@@ -193,7 +227,7 @@ img {
 	0% {
 		opacity: 1;
 	}
-	30%, 70% {
+	50% {
 		opacity: 0;
 	}
 	100% {
