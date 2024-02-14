@@ -1,6 +1,11 @@
-	var video = document.querySelector(".header__video");
-	video.volume = 0.6;
+var audio = document.querySelector(".header__video");
 
+const headerBtn = document.querySelector('.header__btn');
+headerBtn.addEventListener('click', (e) => {
+		audio.play();
+		e.target.style.opacity = 0;
+})
+audio.volume = 0.8;
 
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
@@ -25,11 +30,18 @@ setTimeout(() => {
 }, 4500);
 
 setTimeout(() => {
-	st.style.opacity = 0;
-	st.style.transform = "translateX(150px)";
-	tt.style.opacity = 0;
-	tt.style.transform = "translateX(-150px)";
-	title.style.opacity = 0;
+	if (window.screen.width <= 800) {
+		st.style.opacity = 0;
+		tt.style.opacity = 0;
+		title.style.opacity = 0;
+		return;
+	} else {
+		st.style.opacity = 0;
+		tt.style.opacity = 0;
+		st.style.transform = "translateX(150px)";
+		tt.style.transform = "translateX(-150px)";
+		title.style.opacity = 0;
+	}
 }, 7000);
 
 const footer = document.querySelector(".footer");
@@ -45,7 +57,6 @@ const footerBtn = document.querySelector(".footer__btn").addEventListener("click
 	footerTrack.style.animation = "fadeInOut 2s linear";
 	setTimeout(() => {
 		footerMe.style.opacity = 1;
-		footerMe.style.height = "40vh";
 		footerTrack.style.animation = "";
 	}, 2000);
 	setTimeout(() => {
@@ -58,11 +69,14 @@ const footerBtn = document.querySelector(".footer__btn").addEventListener("click
 		}, 3000);
 	}, 8000);
 	setTimeout(() => {
+		footerTrack.style.transition = 'all 0s';
 		footerTrack.style.transform = "translateX(0)";
-		footerMe.style.height = "0";
 		footerTrack.style.animation = "";
 		footerWants.style.opacity = 0;
 		footerWants2.style.opacity = 0;
 		footerBlock3.style.opacity = 1;
+		setTimeout(() => {
+			footerTrack.style.transition = 'all 2s linear';
+		}, 100)
 	}, 20000);
 });
